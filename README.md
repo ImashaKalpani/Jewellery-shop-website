@@ -1,2 +1,2 @@
-# Wedding
-Responsive Wedding Planner Website using HTML - CSS - JS - PHP - MYSQL Database
+# Green Tea Shop Website
+Responsive Green Tea Shop Website using HTML - CSS - JS - PHP - MYSQL Database
