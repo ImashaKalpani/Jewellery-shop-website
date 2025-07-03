@@ -254,7 +254,6 @@ header.scrolled{
 .header .flex .navbar a{
     display: block;
     margin: 2rem;
-    border-top: 1px solid var(--green);
 }
 .form-container{
     width: 100%;
