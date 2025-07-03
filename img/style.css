@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --green : #87a243;
+    --light-green: #e0ffcd;
+    --box-shadow: 0 0 10px rgb(0 0 0/15%);
+}
+html{
+    font-size: 16px;
+    -ms-overflow-style: scrollbar;
+    -wekkit-tap-highlight-color: transparent;
+    font-family: sans-serif;
+    --ms-text-size-adjust: 100%;
+    -webkit-text-size-djust: 100%;
+}
+body{
+    background-image: url('img/body-bg.jpg');
+    width: 100%;
+}
+.main{
+    width: 85vw;
+    background: #fff;
+    box-shadow: 0 2px 6px 0 rgb(0 0 0 / 10%);
+    margin: 1rem auto;
+    margin-top: 10rem;
+    padding: 2%;
+}
+a{
+    text-decoration: none;
+}
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 1rem 0;
+    line-height: 2;
+}
+.title p{
+    text-transform: capitalize;
+}
+ul{
+    list-style: none;
+}
+sup{
+    position: absolute;
+    top: 15%;
+    background: #000;
+    color: #000;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 15px;
+    text-align: center;
+    padding: .1rem; 
+}
+.empty{
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 59%;
+    padding: .5rem 1.5rem;
+    border-radius: 5px;
+    background: var(--light-green);
+    color: var(--green);
+    border: 1px solid var(--green);
+}
+.btn{
+    line-height: 2;
+    background-color: #e0ffcd;
+    padding: 5px 35px;
+    display: inline-block;
+    border-radius: 30px;
+    color: #000;
+    text-transform: capitalize;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+    transition: color 0.3s ease;
+    z-index: 2;
+}
+.btn ::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    background: var(--green);
+    height: 100%;
+    width: 0;
+    z-index: -1;
+    transition: width 0.3s ease;
+}
+.btn:hover::before{
+    width: 100%;
+}
+label{
+    text-transform: capitalize;
+}
+input,
+textarea{
+    background: #fff;
+    border: none;
+    outline: none;
+    padding: .6rem;
+    box-shadow: var(--box-shadow);
+    margin: .5rem 0;
+    border: 1px solid var(--green);
+    width: 100%;
+}
+button{
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.banner{
+    background-image: url('img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: var(--green);
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner h1{
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 3rem;
+}
+.title2{
+    border-top: 1px solid var(--green);
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    box-shadow: var(--box-shadow);  
+}
+.title2 a{
+    color: var(--green);
+}
