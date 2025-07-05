@@ -5,6 +5,7 @@
 
     $conn = new PDO($db_name, $db_user, $db_password);
 
+
     function unique_id(){
         $chars='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $charLength=strlen($chars);
