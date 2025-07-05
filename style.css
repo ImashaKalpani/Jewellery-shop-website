@@ -8,12 +8,12 @@
 :root{
     --green : #87a243;
     --light-green: #e0ffcd;
-    --box-shadow: 0 0 10px rgb(0 0 0/15%);
+    --box-shadow: 0 0 10px rgba(0 0 0/15%);
 }
 html{
     font-size: 16px;
     -ms-overflow-style: scrollbar;
-    -wekkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
     font-family: sans-serif;
     --ms-text-size-adjust: 100%;
     -webkit-text-size-djust: 100%;
@@ -164,7 +164,7 @@ header{
 }
 header.scrolled{
     top: 0;
-    box-shadow: 0 5px 20px 0.1px rgb(0, 0, 0, 0.1);
+    box-shadow: 0 5px 20px 0.1px rgba(0, 0, 0, 0.1);
 }
 .header.scrolled a:hover{
     color: var(--green);
