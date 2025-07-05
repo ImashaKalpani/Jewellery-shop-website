@@ -19,7 +19,7 @@ html{
     -webkit-text-size-djust: 100%;
 }
 body{
-    background-image: url('img/body-bg.jpg');
+    background-image: url('image/body-bg.jpg');
     width: 100%;
 }
 .main{
@@ -123,7 +123,7 @@ button{
     cursor: pointer;
 }
 .banner{
-    background-image: url('img/banner.jpg');
+    background-image: url('image/banner.jpg');
     background-size: cover;
     background-position: center;
     background-color: var(--green);
