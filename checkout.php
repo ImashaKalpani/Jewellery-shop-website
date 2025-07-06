@@ -57,6 +57,17 @@
                                 <input type="email" name="email" required maxlength="50" placeholder="Enter your email" class="input">
                             </div>
                             <div class="input-field">
+                                <p>payment method<span>*</span></p>
+                                <select name="method" class="input"> 
+                                    <option value="cash on delivery">cash on delivery</option>
+                                    <option value="credit or debit card">credit or debit card</option>
+                                    <option value="net banking">net banking</option>
+                                    <option value="UPI or RuPay">UPI or RuPay</option>
+                                    <option value="paytm">paytm</option>
+                                </select>
+
+                            </div>
+                            <div class="input-field">
                                 <p>your name<span>*</span></p>
                                 <input type="text" name="name" required maxlength="50" placeholder="Enter your name" class="input">
                             </div>
