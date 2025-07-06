@@ -1,5 +1,5 @@
 
-<header>
+<header class="header">
     <div class="flex">
         <a href="home.php" class="logo"><img src="img/logo.jpg"></a>
         <nav class="navbar">
