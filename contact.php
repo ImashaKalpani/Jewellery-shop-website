@@ -24,6 +24,22 @@
         </div>
         <button type="submit" name="submit-btn" class="btn">send message</button>
     </form>
+    <div class="address">
+        <div class="title">
+            <img src="img/download.png" class="logo">
+            <h1>contact details</h1>
+        </div>
+            <div class="box-container">
+                <div class="box">
+                    <i class="bx bxs-map-pin"></i>
+                        <div>
+                            <h4>address</h4>
+                        </div>
+                </div>
+            </div>
+    </div>
+
+
 </div>
         <?php include 'components/footer.php'; ?>
         </div>
