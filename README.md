@@ -1,2 +1,2 @@
-# Green Tea Shop Website
-Responsive Green Tea Shop Website using HTML - CSS - JS - PHP - MYSQL Database
+# Jewellery shop website
+Responsive Jewellery shop website using HTML - CSS - JS - PHP - MYSQL Database
