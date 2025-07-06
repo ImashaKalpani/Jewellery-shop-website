@@ -68,10 +68,18 @@
 
                             </div>
                             <div class="input-field">
-                                <p>your name<span>*</span></p>
-                                <input type="text" name="name" required maxlength="50" placeholder="Enter your name" class="input">
+                                <p>address type<span>*</span></p>
+                                <select name="address_type" class="input"> 
+                                    <option value="home">home</option>
+                                    <option value="office">office</option>
+                                    
+                                </select>
                             </div>
                         </div>
+                                 <div class="input-field">
+                                <p>address line 01<span>*</span></p>
+                                <input type="text" name="flat" required maxlength="50" placeholder="e.g flat & building number" class="input">
+                            </div>
                     </div>
                 </form>
             </div>
