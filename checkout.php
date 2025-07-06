@@ -39,6 +39,7 @@
                 <img src="img/download.png" class="logo">
                     <h1>checkout summary</h1>
                     <p> Fill in the following details to proceed with checkout. </p>
+            </div>
             <div class="row">
                 <form method="post">
                     <h3>billing details</h3>
@@ -80,10 +81,65 @@
                                 <p>address line 01<span>*</span></p>
                                 <input type="text" name="flat" required maxlength="50" placeholder="e.g flat & building number" class="input">
                             </div>
+
+
+                             <div class="input-field">
+                                <p>address line 02<span>*</span></p>
+                                <input type="text" name="street" required maxlength="50" placeholder="e.g street name" class="input">
+                            </div>
+
+
+                             <div class="input-field">
+                                <p>address line 03<span>*</span></p>
+                                <input type="text" name="city" required maxlength="50" placeholder="Enter your city name" class="input">
+                            </div>
+
+
+                             <div class="input-field">
+                                <p>Country name<span>*</span></p>
+                                <input type="text" name="country" required maxlength="50" placeholder="Enter your country name" class="input">
+                            </div>
+
+
+                             <div class="input-field">
+                                <p>Pincode<span>*</span></p>
+                                <input type="text" name="pincode" required maxlength="6" placeholder="112233"  min="0" max="999999" class="input">
+                            </div>
                     </div>
+                    </div>
+
+                    <button type="submit" name="place_order" class="btn">place order</button>
                 </form>
+
+                <div class="summary">
+                    <h3>my bag</h3>
+                    <div class="box-container">
+                        <?php
+                        $grand_total=0;
+                        if (isset($_GET['get_id'])) {
+                                $select_get = $conn->prepare("SELECT * FROM 'products' WHERE id=?");
+                                $select_get->execute([$_GET['get_id']]);
+                                while($fetch_get = $select_get->fetch(PDO::FETCH_ASSOC)){
+                                    $sub_total = $fetch_get['price'];
+                                    $grand_total+=$sub_total;
+                        ?>
+                            <div class="flex">
+                                <img src="image/<?=$fetch_get['image']; ?>" class="image">
+                            <div>
+                                <h3 class="name"><?=$fetch_get['name']; ?></h3>
+                                <p class="price"><?=$fetch_get['price']; ?></p>
+                                </div>
+                                </div>
+                            <?php
+                                }
+                        }else{
+                            $select
+                        }
+                        ?>
+                    </div>
+                </div>
             </div>
-            </div>
+        
         </section>
 
          <?php include 'components/footer.php'; ?>
