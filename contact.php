@@ -23,6 +23,7 @@
           <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
         <title>jewellary shop - Contact page</title>
+</head>
     <body>
         <?php include 'components/header.php'; ?>
         <div class ="main">
