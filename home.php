@@ -22,6 +22,9 @@ include 'components/connection.php';
 <body>
 
     <?php include 'components/header.php'; ?>
+    <div class="main">
+        <?php include 'components/footer.php'; ?>
+    </div>
 
     <!-- Alert system -->
     <?php include 'components/alert.php'; ?>
