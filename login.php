@@ -9,8 +9,7 @@ if (isset($_SESSION['user_id'])) {
     $user_id = '';
 }
 
-//register user
-
+// login user
 if (isset($_POST['submit'])) {
 
     $email = $_POST['email'];
@@ -24,12 +23,12 @@ if (isset($_POST['submit'])) {
     $select_user->execute([$email, $pass]);
     $row = $select_user->fetch(PDO::FETCH_ASSOC);
 
-    if($select_user -> rowCount() -> 0){
+    if ($select_user->rowCount() > 0) {
         $_SESSION['user_id'] = $row['id'];
         $_SESSION['user_name'] = $row['name'];
-        $_SESSION['user_email'] = $row['email']; 
+        $_SESSION['user_email'] = $row['email'];
         header('location: home.php');
-    }else{
+    } else {
         $message[] = 'incorrect username or password';
     }
 }
