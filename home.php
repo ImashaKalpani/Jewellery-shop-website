@@ -120,6 +120,20 @@ include 'components/connection.php';
             </div>
         </section>
 
+        <section class="container">
+            <div class="box-container">
+                <div class="box">
+                    <img src="img/about-us.jpg">
+                </div>
+                <div class="box">
+                    <img src="img/download.png">
+                    <span>Healthy Tea</span>
+                    <h1>Save up to 50% off</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat, quidem fugiat illum? Quisquam, impedit consequatur.</p>
+                </div>
+            </div>
+        </section>
+
         <?php include 'components/footer.php'; ?>
     </div>
 

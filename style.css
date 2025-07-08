@@ -576,6 +576,42 @@ textarea {
     cursor: pointer;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2%;
+    box-shadow: var(--box-shadow);
+}
+
+
+.container .box{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .box img[src="img/about-us.jpg"] {
+    width: 80%;
+    height: auto;
+    display: block;
+    
+}
+
+.container .box span{
+    color: var(--green);
+    font-size: 2rem;
+    margin: 1rem 0;
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.container .box h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
 
 /*.........footer section........*/
 
