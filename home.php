@@ -31,7 +31,7 @@ include 'components/connection.php';
                     <div class="slide-detail">
                         <h1>Lorem ipsom dolor sit</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat, quidem fugiat illum? Quisquam, impedit consequatur.</p>
-                        <a href="view_products.php">Shop Now</a>
+                        <a href="view_products.php" class="btn">Shop Now</a>
                     </div>
                     <div class="hero-dec-top"></div>
                     <div class="hero-dec-bottom"></div>
@@ -43,7 +43,7 @@ include 'components/connection.php';
                     <div class="slide-detail">
                         <h1>Welcome To My Shop</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat, quidem fugiat illum? Quisquam, impedit consequatur.</p>
-                        <a href="view_products.php">Shop Now</a>
+                        <a href="view_products.php" class="btn">Shop Now</a>
                     </div>
                     <div class="hero-dec-top"></div>
                     <div class="hero-dec-bottom"></div>
@@ -55,7 +55,7 @@ include 'components/connection.php';
                     <div class="slide-detail">
                         <h1>Lorem ipsom dolor sit</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat, quidem fugiat illum? Quisquam, impedit consequatur.</p>
-                        <a href="view_products.php"><button class="btn">Shop Now</button></a>
+                        <a href="view_products.php" class="btn">Shop Now</a>
                     </div>
                     <div class="hero-dec-top"></div>
                     <div class="hero-dec-bottom"></div>
@@ -67,7 +67,7 @@ include 'components/connection.php';
                     <div class="slide-detail">
                         <h1>Lorem ipsom dolor sit</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat, quidem fugiat illum? Quisquam, impedit consequatur.</p>
-                        <a href="view_products.php">Shop Now</a>
+                        <a href="view_products.php" class="btn">Shop Now</a>
                     </div>
                     <div class="hero-dec-top"></div>
                     <div class="hero-dec-bottom"></div>
@@ -79,17 +79,45 @@ include 'components/connection.php';
                     <div class="slide-detail">
                         <h1>Lorem ipsom dolor sit</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat, quidem fugiat illum? Quisquam, impedit consequatur.</p>
-                        <a href="view_products.php">Shop Now</a>
+                        <a href="view_products.php" class="btn">Shop Now</a>
                     </div>
                     <div class="hero-dec-top"></div>
                     <div class="hero-dec-bottom"></div>
-                </div>
+                </div>---
                 <!-- Slide end -->
                 <div class="left-arrow"><i class="bx bxs-left-arrow"></i></div>
                 <div class="right-arrow"><i class="bx bxs-right-arrow"></i></div>
             </div>
         </section>
         <!-------home slider end----->
+
+        <section class="thumb">
+            <div class="box">
+                <img src="img/thumb2.jpg">
+                <h1>Green Tea</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat, quidem fugiat illum? Quisquam, impedit consequatur.</p>
+                <i class="bx bx-chevron-right"></i>
+            </div>
+            <div class="box">
+                <img src="img/thumb0.jpg">
+                <h1>Lemon Tea</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat, quidem fugiat illum? Quisquam, impedit consequatur.</p>
+                <i class="bx bx-chevron-right"></i>
+            </div>
+            <div class="box">
+                <img src="img/thumb1.jpg">
+                <h1>green coffee</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat, quidem fugiat illum? Quisquam, impedit consequatur.</p>
+                <i class="bx bx-chevron-right"></i>
+            </div>
+            <div class="box">
+                <img src="img/thumb.jpg">
+                <h1>Jewellery</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat, quidem fugiat illum? Quisquam, impedit consequatur.</p>
+                <i class="bx bx-chevron-right"></i>
+            </div>
+        </section>
+
         <?php include 'components/footer.php'; ?>
     </div>
 

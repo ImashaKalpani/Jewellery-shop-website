@@ -398,11 +398,13 @@ textarea {
     position: relative;
 }
 
-.slider__slider .slide-detail{
+.slider__slider .slide-detail {
     position: absolute;
     top: 30%;
-    left: 20%;
+    left: 40%;
+    transform: translate(-50%);
     text-align: center;
+    z-index: 10;
 }
 
 .slider__slider .slide-detail h1{
@@ -441,6 +443,24 @@ textarea {
     margin-bottom: 2rem;
 }
 
+.slider__slider .slide-detail a {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: var(--light-green);
+    color: #000;
+    border: 2px solid var(--green);
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.slider__slider .slide-detail a:hover {
+    background-color: var(--green);
+    color: #fff;
+    border-color: var(--green);
+}
+
 .slide1{
     background-image: url('img/slider.jpg');
 }
@@ -470,6 +490,7 @@ textarea {
     box-shadow: 0 0 0 6px rgb(255 255 255 / 40%);
     z-index: 2;
     cursor: pointer;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
