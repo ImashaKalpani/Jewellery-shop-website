@@ -11,6 +11,52 @@
         session_destroy();
         header("location: login.php"); 
     }
+    if (isset($_POST['place_order'])){
+        $name = $_POST['name'];
+        $name = filter_var($name, FILTER_SANITIZE_STRING);
+        $number = $_POST['number'];
+        $number = filter_var($number, FILTER_SANITIZE_STRING);
+        $email = $_POST['email'];
+        $email = filter_var($email, FILTER_SANITIZE_STRING);
+        $address = $_POST['flat'].', '.$_POST['street'].', '.$_POST['city'].', '.$_POST['country'].', '.$_POST['pincode'];
+        $address = filter_var($address, FILTER_SANITIZE_STRING);
+        $address_type = $_POST['address_type'];
+        $address_type = filter_var($address_type, FILTER_SANITIZE_STRING);
+        $method = $_POST['method'];
+        $method = filter_var($method, FILTER_SANITIZE_STRING);
+
+        $varify_cart = $conn->prepare("SELECT * FROM 'cart' WHERE user_id=?");
+        $varify_cart->execute([$user_id]);
+
+        if(isset($_GET['get_id'])){
+            $get_product = $conn->prepare("SELECT * FROM 'products' WHERE id=? LIMIT 1");
+            $get_product->execute([$_GET['get_id']]);
+            if($get_product->rowCount() > 0){
+                while($fetch_p = $get_product->fetch(PDO::FETCH_ASSOC)){
+                    $insert_order = $conn->prepare("INSERT INTO 'orders'(id, user_id, name, number, email, address, address_type, $method, product_id, price, qty)VALUES(?,?,?,?,?,?,?,?,?,?,?)");
+                    $insert_order->execute([unique_id(), $user_id, $name, $number, $email, $address, $address_type, $method, $fetch_p['id'], $fetch_p['price'],1]);
+                
+                    header('location: order.php');
+                }
+            }else{
+                $warning_msg[] ='somthing went wrong';
+            }
+        }elseif ($varify_cart->rowCount()>0){
+            while($f_cart = $varify_cart->fetch(PDO::FETCH_ASSOC)){
+                $insert_order = $conn->prepare("INSERT INTO 'orders'(id, user_id, name, number, email, address, address_type, $method, product_id, price, qty)VALUES(?,?,?,?,?,?,?,?,?,?,?)");
+                    $insert_order->execute([unique_id(), $user_id, $name, $number, $email, $address, $address_type, $method, $fetch_p['id'], $f_cart['price'],$f_cart['qty']]);
+                
+                    header('location: order.php');
+            }
+            if ($insert_order){
+                $delete_cart_id = $conn->prepare("DELETE FROM 'cart' WHERE user_id = ?");
+                $delete_cart_id->execute([$user_id]);
+                header('location: order.php');
+            }
+        }else{
+             $warning_msg[] ='somthing went wrong';
+        }
+    }
 ?>
     <style type="text/css">
         <?php include 'style.css'; ?>
