@@ -51,7 +51,7 @@
             <div class="card">
                 <h3>Newsletter</h3>
                 <p>Sign Up For Newslatter</p>
-                <div>
+                <div class="social-links">
                     <i class="bx bxl-instagram"></i>
                     <i class="bx bxl-twitter"></i>
                     <i class="bx bxl-behance"></i>

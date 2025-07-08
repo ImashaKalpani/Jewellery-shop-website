@@ -371,9 +371,143 @@ textarea {
     color: #fff;
 }
 
+/*.........home slider section........*/
+
+.home-section{
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.slider{
+    font-family: "Roboto", sans-serif;
+    max-height: 80vh;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+}
+
+.slider__slider{
+    height: 80vh;
+    min-width: 100vw;
+    width: 100%;
+    scroll-snap-align: start;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.slider__slider .slide-detail{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    text-align: center;
+}
+
+.slider__slider .slide-detail h1{
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+}
+
+.slider__slider .slide-detail h1::before{
+    position: absolute;
+    content: '';
+    background: #e2e2e244;
+    width: 380px;
+    height: 1px;
+    bottom: -40%;
+    left: 20%;
+}
+
+.slider__slider .slide-detail h1::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    bottom: -50%;
+    left: 50%;
+    background: #f7b90f;
+}
+
+.slider__slider .slide-detail p{
+    font-size: 14px;
+    color: #fff;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.slide1{
+    background-image: url('img/slider.jpg');
+}
+.slide2{
+    background-image: url('img/1.png');
+}
+.slide3{
+    background-image: url('img/9.jpg');
+}
+.slide4{
+    background-image: url('img/0.webp');
+}
+.slide5{
+    background-image: url('img/4.jpg');
+}
+
+.left-arrow,
+.right-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    font-size: 1rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--light-green);
+    box-shadow: 0 0 0 6px rgb(255 255 255 / 40%);
+    z-index: 2;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000;
+}
+
+.right-arrow{
+    right: 1rem;
+}
+
+.left-arrow{
+    left: 1rem;
+}
+
+.hero-dec-top,
+.hero-dec-bottom{
+    position: absolute;
+    left: 5%;
+    width: 100px;
+    height: 100px;
+}
+
+.hero-dec-top{
+    top: 4%;
+    border-left: 2px solid #e2e2e255;
+    border-top: 2px solid #e2e2e255;
+}
+
+.hero-dec-bottom{
+    bottom: 5%;
+    border-left: 2px solid #e2e2e255;
+    border-bottom: 2px solid #e2e2e255;
+}
+
+
 /*.........footer section........*/
 
-.top-footer {
+.top-footer{
     width: 100%;
     background: var(--green);
     padding: 1rem;
@@ -384,15 +518,15 @@ textarea {
     color: #fff;
 }
 
-.top-footer h2 i {
+.top-footer h2 i{
     margin-right: .5rem;
 }
 
-.top-footer input {
+.top-footer input{
     width: 40vw;
 }
 
-footer {
+footer{
     background-image: url('img/0.webp');
     width: 100%;
     min-height: 73vh;
@@ -402,7 +536,7 @@ footer {
     position: relative;
 }
 
-footer .overlay {
+footer .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -412,16 +546,16 @@ footer .overlay {
     opacity: 0.5;
 }
 
-.footer-content {
+.footer-content{
     position: absolute;
     top: 10%;
 }
 
-.footer-content .img-box {
+.footer-content .img-box{
     text-align: center;
 }
 
-footer .inner-footer {
+footer .inner-footer{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     align-items: center;
@@ -433,11 +567,11 @@ footer .inner-footer {
     color: #fff;
 }
 
-footer .inner-footer .card {
-    margin: 5rem;
+footer .inner-footer .card{
+    margin: .5rem;
 }
 
-footer .inner-footer .card li {
+footer .inner-footer .card li{
     cursor: pointer;
     line-height: 1.5rem;
     text-transform: capitalize;
@@ -445,11 +579,11 @@ footer .inner-footer .card li {
 }
 
 footer .inner-footer .card li:nth-child(1),
-footer .inner-footer .card p {
+footer .inner-footer .card p{
     margin-top: 1rem;
 }
 
-footer .inner-footer .card h3 {
+footer .inner-footer .card h3{
     text-transform: uppercase;
 }
 
@@ -458,14 +592,14 @@ footer .inner-footer .card p{
     font-size: 16px;
 }
 
-footer .inner-footer .card .social-links {
+footer .inner-footer .card .social-links{
     margin-top: 1rem;
 }
 
-footer .inner-footer .card .social-links i {
+footer .inner-footer .card .social-links i{
     width: 50px;
     height: 50px;
-    line-height: 25px;
+    line-height: 30px;
     border-radius: 50%;
     background-color: #fff;
     box-shadow: var(--box-shadow);
@@ -476,15 +610,15 @@ footer .inner-footer .card .social-links i {
     font-size: 1.3rem;
 }
 
-footer.inner-footer .card .social-links i:hover {
+footer.inner-footer .card .social-links i:hover{
     background: var(--green);
     color: #fff;
 }
 
-footer .bottom-footer {
+footer .bottom-footer{
     text-transform: capitalize;
     text-align: center;
-    padding: 3rem 0;
+    padding: 1rem 0;
     color: #fff;
     padding-bottom: 1rem;
 }

@@ -23,17 +23,82 @@ include 'components/connection.php';
 
     <?php include 'components/header.php'; ?>
     <div class="main">
+
+        <section class="home-section">
+            <div class="slider">
+                <div class="slider__slider slide1">
+                    <div class="overlay"></div>
+                    <div class="slide-detail">
+                        <h1>Lorem ipsom dolor sit</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat, quidem fugiat illum? Quisquam, impedit consequatur.</p>
+                        <a href="view_products.php">Shop Now</a>
+                    </div>
+                    <div class="hero-dec-top"></div>
+                    <div class="hero-dec-bottom"></div>
+                </div>
+                <!-- Slide end -->
+
+                <div class="slider__slider slide2">
+                    <div class="overlay"></div>
+                    <div class="slide-detail">
+                        <h1>Welcome To My Shop</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat, quidem fugiat illum? Quisquam, impedit consequatur.</p>
+                        <a href="view_products.php">Shop Now</a>
+                    </div>
+                    <div class="hero-dec-top"></div>
+                    <div class="hero-dec-bottom"></div>
+                </div>
+                <!-- Slide end -->
+
+                <div class="slider__slider slide3">
+                    <div class="overlay"></div>
+                    <div class="slide-detail">
+                        <h1>Lorem ipsom dolor sit</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat, quidem fugiat illum? Quisquam, impedit consequatur.</p>
+                        <a href="view_products.php"><button class="btn">Shop Now</button></a>
+                    </div>
+                    <div class="hero-dec-top"></div>
+                    <div class="hero-dec-bottom"></div>
+                </div>
+                <!-- Slide end -->
+
+                <div class="slider__slider slide4">
+                    <div class="overlay"></div>
+                    <div class="slide-detail">
+                        <h1>Lorem ipsom dolor sit</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat, quidem fugiat illum? Quisquam, impedit consequatur.</p>
+                        <a href="view_products.php">Shop Now</a>
+                    </div>
+                    <div class="hero-dec-top"></div>
+                    <div class="hero-dec-bottom"></div>
+                </div>
+                <!-- Slide end -->
+
+                <div class="slider__slider slide5">
+                    <div class="overlay"></div>
+                    <div class="slide-detail">
+                        <h1>Lorem ipsom dolor sit</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat, quidem fugiat illum? Quisquam, impedit consequatur.</p>
+                        <a href="view_products.php">Shop Now</a>
+                    </div>
+                    <div class="hero-dec-top"></div>
+                    <div class="hero-dec-bottom"></div>
+                </div>
+                <!-- Slide end -->
+                <div class="left-arrow"><i class="bx bxs-left-arrow"></i></div>
+                <div class="right-arrow"><i class="bx bxs-right-arrow"></i></div>
+            </div>
+        </section>
+        <!-------home slider end----->
         <?php include 'components/footer.php'; ?>
     </div>
-
-    <!-- Alert system -->
-    <?php include 'components/alert.php'; ?>
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <script src="http://localhost/GREEN-TEA-SHOP-WEBSITE/script.js"></script>
 
-
+    <!-- Alert system -->
+    <?php include 'components/alert.php'; ?>
 
 </body>
 
