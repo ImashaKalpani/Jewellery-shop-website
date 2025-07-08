@@ -97,7 +97,30 @@ if (isset($_POST['add_to_cart'])) {
                     $select_products->execute();
                     if ($select_products -> rowCount()>0) {
                         while($fetch_products = $select_products->fetch(PDO::FETCH_ASSOC)){
-                            
+
+                   ?>
+                        <form method="post">
+                            <img src="image/ <?php echo $fetch_products['image']; ?>">
+                            <div class="detail">
+                                <div class="price"><?php echo $fetch_products['price']; ?></div>
+                                <div class="name"><?php echo $fetch_products['name']; ?></div>
+                                <div class="product-detail">
+                                    <p>
+                                        bla blaa blaaaaaaaaaaaaaaaaaa
+                                        blaa blaaa blaaa blaaaaaaaaaaaaaaaaaa
+                                        wdkikqodqsp kejfqneivhqpdmca
+                                        fqijfwohfp  qwochqncqlhflkanscvjq
+                                    </p>
+
+                                </div>
+                                <input type="hidden" name="product_id" value="<?php echo $fetch_products['id']; ?>">
+                                <div class="">
+
+                                </div>
+                            </div>
+                        </form>
+                    <?php
+
                         }
 
                     }
