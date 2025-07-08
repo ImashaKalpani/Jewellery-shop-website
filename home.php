@@ -134,6 +134,48 @@ include 'components/connection.php';
             </div>
         </section>
 
+        <section class="shop">
+            <div class="title">
+                <img src="img/download.png">
+                <h1>Trending Products</h1>
+            </div>
+            <div class="row">
+                <img src="img/about.jpg">
+                <div class="row-detail">
+                    <img src="img/basil.jpg">
+                    <div class="top-footer">
+                        <h1>A cup of green tea makes you healthy</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <img src="img/card.jpg">
+                    <a href="view_products.php" class="btn">Shop Now</a>
+                </div>
+                <div class="box">
+                    <img src="img/card0.jpg">
+                    <a href="view_products.php" class="btn">Shop Now</a>
+                </div>
+                <div class="box">
+                    <img src="img/card1.jpg">
+                    <a href="view_products.php" class="btn">Shop Now</a>
+                </div>
+                <div class="box">
+                    <img src="img/card2.jpg">
+                    <a href="view_products.php" class="btn">Shop Now</a>
+                </div>
+                <div class="box">
+                    <img src="img/10.jpg">
+                    <a href="view_products.php" class="btn">Shop Now</a>
+                </div>
+                <div class="box">
+                    <img src="img/6.webp">
+                    <a href="view_products.php" class="btn">Shop Now</a>
+                </div>
+            </div>
+        </section>
+
         <?php include 'components/footer.php'; ?>
     </div>
 
