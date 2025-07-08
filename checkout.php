@@ -154,13 +154,16 @@
                             </div>
                         </div>
                         <?php
-                          }
+                                }
+                            }else{
+                                echo '<p class="empty">your cart is empty!</p>';
                             }
                         }
 
 
                         ?>
                     </div>
+                    <div class="grand-total"><span>total amount payable:</span>$<?=$grand_total ?>/-</div>
                 </div>
             </div>
         
