@@ -448,7 +448,7 @@ textarea {
     padding: 10px 30px;
     background-color: var(--light-green);
     color: #000;
-    border: 2px solid var(--green);
+    border: none;
     border-radius: 30px;
     font-size: 16px;
     font-weight: 600;
@@ -523,6 +523,57 @@ textarea {
     bottom: 5%;
     border-left: 2px solid #e2e2e255;
     border-bottom: 2px solid #e2e2e255;
+}
+
+.thumb{
+    max-width: 1200px;
+    box-shadow: var(--box-shadow);
+    margin: 2rem auto;
+    padding: 2%;
+}
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.thumb .box-container .btn{
+    text-align: center;
+    margin: 1rem;
+    line-height: 1.5;
+    background: #fff;
+    padding-bottom: 1rem;
+    color: gray;
+}
+
+.thumb .box-container .box img{
+    transition: all 800ms ease-in-out;
+}
+
+.thumb .box-container .box:hover img{
+    transform: rotateY(180deg);
+}
+
+.thumb .box-container .box h3{
+    text-transform: capitalize;
+    color: var(--green);
+}
+
+.box-container .box p{
+    color: #555;
+    margin: .5rem;
+}
+
+.thumb .box-container .box i{
+    color: var(--green);
+    font-size: 40px;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid var(--green);
+    cursor: pointer;
 }
 
 

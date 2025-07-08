@@ -92,29 +92,31 @@ include 'components/connection.php';
         <!-------home slider end----->
 
         <section class="thumb">
-            <div class="box">
-                <img src="img/thumb2.jpg">
-                <h1>Green Tea</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat, quidem fugiat illum? Quisquam, impedit consequatur.</p>
-                <i class="bx bx-chevron-right"></i>
-            </div>
-            <div class="box">
-                <img src="img/thumb0.jpg">
-                <h1>Lemon Tea</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat, quidem fugiat illum? Quisquam, impedit consequatur.</p>
-                <i class="bx bx-chevron-right"></i>
-            </div>
-            <div class="box">
-                <img src="img/thumb1.jpg">
-                <h1>green coffee</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat, quidem fugiat illum? Quisquam, impedit consequatur.</p>
-                <i class="bx bx-chevron-right"></i>
-            </div>
-            <div class="box">
-                <img src="img/thumb.jpg">
-                <h1>Jewellery</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat, quidem fugiat illum? Quisquam, impedit consequatur.</p>
-                <i class="bx bx-chevron-right"></i>
+            <div class="box-container">
+                <div class="box">
+                    <img src="img/thumb2.jpg">
+                    <h1>Green Tea</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat, quidem fugiat illum? Quisquam, impedit consequatur.</p>
+                    <i class="bx bx-chevron-right"></i>
+                </div>
+                <div class="box">
+                    <img src="img/thumb0.jpg">
+                    <h1>Lemon Tea</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat, quidem fugiat illum? Quisquam, impedit consequatur.</p>
+                    <i class="bx bx-chevron-right"></i>
+                </div>
+                <div class="box">
+                    <img src="img/thumb1.jpg">
+                    <h1>green coffee</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat, quidem fugiat illum? Quisquam, impedit consequatur.</p>
+                    <i class="bx bx-chevron-right"></i>
+                </div>
+                <div class="box">
+                    <img src="img/thumb.jpg">
+                    <h1>Jewellery</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat, quidem fugiat illum? Quisquam, impedit consequatur.</p>
+                    <i class="bx bx-chevron-right"></i>
+                </div>
             </div>
         </section>
 
