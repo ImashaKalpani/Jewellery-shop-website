@@ -704,6 +704,31 @@ textarea {
     margin-top: 0.5rem;
 }
 
+.shop-category .box{
+    position: relative;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.shop-category .box-container{
+    margin-right: 30px;
+}
+
+.shop-category .detail{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    line-height: 2;
+    text-align: center;
+}
+
+.shop-category .detail h1{
+    font-size: 2em;
+}
+
+.shop-category .detail span{
+    font-size: 1.3rem;
+}
 /*.........footer section........*/
 
 .top-footer{

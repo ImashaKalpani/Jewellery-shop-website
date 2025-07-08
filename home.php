@@ -176,6 +176,27 @@ include 'components/connection.php';
             </div>
         </section>
 
+        <section class="shop-category">
+            <div class="box-container">
+                <div class="box">
+                    <img src="img/6.jpg">
+                    <div class="detail">
+                        <span>BIG OFFERS</span>
+                        <h1>Extra 15% off</h1>
+                        <a href="view_products.php" class="btn">Shop Now</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/7.jpg">
+                    <div class="detail">
+                        <span>New in taste</span>
+                        <h1>Coffee House</h1>
+                        <a href="view_products.php" class="btn">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <?php include 'components/footer.php'; ?>
     </div>
 
