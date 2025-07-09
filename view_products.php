@@ -88,7 +88,7 @@ if (isset($_POST['add_to_cart'])) {
             <h1>Shop Now</h1>
         </div>
         <div class="title2">
-            <a href="home.php">home <span>/</span></a> our shop
+            <a href="home.php">Home </a><span> / Our Shop</span>
         </div>
         <section class="products">
             <div class="box-container">
@@ -121,8 +121,9 @@ if (isset($_POST['add_to_cart'])) {
                 ?>
             </div>
         </section>
+        <?php include 'components/footer.php'; ?>
     </div>
-    <?php include 'components/footer.php'; ?>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <script src="script.js"></script>
     <?php include 'components/alert.php'; ?>

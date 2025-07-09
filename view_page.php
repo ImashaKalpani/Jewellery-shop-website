@@ -77,7 +77,7 @@ if (isset($_POST['add_to_cart'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <title>Jewlery Shop - shop page</title>
+    <title>Jewellery Shop - shop page</title>
 </head>
 
 <body>
@@ -87,7 +87,7 @@ if (isset($_POST['add_to_cart'])) {
             <h1>product detail</h1>
         </div>
         <div class="title2">
-            <a href="home.php">home </a><span>/ product detail</details></span>
+            <a href="home.php">home </a><span>/ Product detail</details></span>
         </div>
         <section class="view_page">
             <?php

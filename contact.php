@@ -31,7 +31,7 @@
                 <h1>Contact Us</h1>
             </div>
         <div class = "title2">
-            <a href="home.php">home</a><span>/ Contact Us</span> 
+            <a href="home.php">Home</a><span> / Contact Us</span> 
         </div>
 
         <section class="services">
@@ -105,19 +105,19 @@
             <h1>leave a message</h1>
         </div>
         <div class="input-field">
-            <P> your name<span>*</span></p>
+            <P> your name<sup>*</sup></p>
             <input type="text" name="name">
         </div>
          <div class="input-field">
-            <P> your email<span>*</span></p>
+            <P> your email<sup>*</sup></p>
             <input type="email" name="email">
         </div>
          <div class="input-field">
-            <P> your number<span>*</span></p>
+            <P> your number<sup>*</sup></p>
             <input type="text" name="number">
         </div>
          <div class="input-field">
-            <P> your message<span>*</span></p>
+            <P> your message<sup>*</sup></p>
             <textarea name="message"></textarea>
         </div>
         <button type="submit" name="submit-btn" class="btn">send message</button>
