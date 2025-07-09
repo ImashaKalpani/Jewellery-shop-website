@@ -956,7 +956,7 @@ footer .bottom-footer{
 }
 form {
     width: 100%;
-}
+}}
 
 
 /* ..................about section.....................*/
@@ -1102,12 +1102,11 @@ animation: slie .4s linear;
 .checkout .row{
     display: flex;
     flex-direction: column;
-    flex-flow: column-reverse
+    flex-flow: column-reverse;
 }
 .checkout .row form,
 .checkout .summary{
-    box-shadow: var(----box-shadow);
-   border-radius: 5rem;
+    box-shadow: var(--box-shadow);
    width: 1000px;
    padding: 1rem;
    margin: 1rem auto; 
