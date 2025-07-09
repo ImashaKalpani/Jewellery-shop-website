@@ -301,13 +301,13 @@ textarea {
     color: var(--green);
 }
 
-.form-container sup {
+.form-container span {
     color: red;
     font-size: 1.2rem;
 }
 
 .main-container input[type=submit] {
-    color: #000 !important;
+    color: #000!important;
     cursor: pointer;
 }
 
