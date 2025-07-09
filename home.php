@@ -197,6 +197,59 @@ include 'components/connection.php';
             </div>
         </section>
 
+        <section class="services">
+            <div class="box-container">
+                <div class="box">
+                    <img src="img/icon2.png">
+                    <div class="detail">
+                        <h3>Great Servings</h3>
+                        <p>Save big for every order</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/icon1.png">
+                    <div class="detail">
+                        <h3>24*7 support</h3>
+                        <p>One-on-one support</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/icon0.png">
+                    <div class="detail">
+                        <h3>Gift Vouchers</h3>
+                        <p>Vouchers on every festivals</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/icon.png">
+                    <div class="detail">
+                        <h3>Worldwide Delivery</h3>
+                        <p>Dropship worldwide</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="brand">
+            <div class="box-container">
+                <div class="box">
+                    <img src="img/brand (1).jpg">
+                </div>
+                <div class="box">
+                    <img src="img/brand (2).jpg">
+                </div>
+                <div class="box">
+                    <img src="img/brand (3).jpg">
+                </div>
+                <div class="box">
+                    <img src="img/brand (4).jpg">
+                </div>
+                <div class="box">
+                    <img src="img/brand (5).jpg">
+                </div>
+            </div>
+        </section>
+
         <?php include 'components/footer.php'; ?>
     </div>
 

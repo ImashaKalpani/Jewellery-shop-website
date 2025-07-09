@@ -729,6 +729,29 @@ textarea {
 .shop-category .detail span{
     font-size: 1.3rem;
 }
+
+.services{
+    padding: 3rem 0;
+    text-align: center;
+    background-image: url('img/bg.jpg');
+    line-height: 2;
+    margin: 3rem 0;
+}
+
+.services h3{
+    text-transform: capitalize;
+    color: var(--green);
+}
+
+.services img{
+    width: 30%;
+}
+
+.brand{
+    margin: 2rem auto;
+    text-align: center;
+}
+
 /*.........footer section........*/
 
 .top-footer{
