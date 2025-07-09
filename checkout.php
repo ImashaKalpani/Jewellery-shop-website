@@ -73,8 +73,8 @@ if (isset($_POST['place_order'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jewellery Shop - Checkout Page</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Jewellery Shop - Checkout Page</title>
 </head>
 <body>
 
@@ -85,7 +85,7 @@ if (isset($_POST['place_order'])) {
         <h1>Checkout Summary</h1>
     </div>
     <div class="title2">
-        <a href="home.php">Home</a> / Checkout Summary
+        <a href="home.php">Home</a><span>/ Checkout Summary</span>
     </div>
 
     <section class="checkout">
@@ -93,8 +93,8 @@ if (isset($_POST['place_order'])) {
             <img src="img/download.png" class="logo">
             <h1>Checkout Summary</h1>
             <p>Fill in the following details to proceed with checkout.</p>
-        </div>
-
+    
+</div>
         <div class="row">
             <form method="post">
                 <h3>Billing Details</h3>
@@ -150,7 +150,7 @@ if (isset($_POST['place_order'])) {
                         </div>
                         <div class="input-field">
                             <p>Pincode<span>*</span></p>
-                            <input type="text" name="pincode" required maxlength="6" placeholder="112233" class="input">
+                            <input type="text" name="pincode" required maxlength="6" placeholder="110022" min="0" max="999999" class="input">
                         </div>
                     </div>
                 </div>
@@ -173,13 +173,13 @@ if (isset($_POST['place_order'])) {
                                 <img src="image/<?= $fetch_get['image']; ?>" class="image">
                                 <div>
                                     <h3 class="name"><?= $fetch_get['name']; ?></h3>
-                                    <p class="price">$<?= $fetch_get['price']; ?></p>
+                                    <p class="price"><?= $fetch_get['price']; ?>/-</p>
                                 </div>
                             </div>
                         <?php
                         }
                     } else {
-                        $select_cart = $conn->prepare("SELECT * FROM `cart` WHERE user_id = ?");
+                        $select_cart = $conn->prepare("SELECT * FROM `cart` WHERE user_id =?");
                         $select_cart->execute([$user_id]);
                         if ($select_cart->rowCount() > 0) {
                             while ($fetch_cart = $select_cart->fetch(PDO::FETCH_ASSOC)) {
@@ -193,7 +193,7 @@ if (isset($_POST['place_order'])) {
                                     <img src="image/<?= $fetch_product['image']; ?>">
                                     <div>
                                         <h3 class="name"><?= $fetch_product['name']; ?></h3>
-                                        <p class="price">$<?= $fetch_product['price']; ?> x <?= $fetch_cart['qty']; ?></p>
+                                        <p class="price"><?= $fetch_product['price']; ?> x <?= $fetch_cart['qty']; ?></p>
                                     </div>
                                 </div>
                             <?php
@@ -204,13 +204,14 @@ if (isset($_POST['place_order'])) {
                     }
                     ?>
                 </div>
-                <div class="grand-total"><span>Total Amount Payable:</span> $<?= $grand_total; ?>/-</div>
+                <div class="grand-total"><span>Total Amount Payable:</span> $<?= $grand_total ?>/-</div>
             </div>
         </div>
     </section>
+
+    <?php include 'components/footer.php'; ?>
 </div>
 
-<?php include 'components/footer.php'; ?>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 <script src="script.js"></script>
