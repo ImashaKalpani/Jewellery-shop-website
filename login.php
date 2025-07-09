@@ -37,38 +37,39 @@ if (isset($_POST['submit'])) {
 
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="styleS.css">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JewelAura - login Now</title>
+    <title>Aurora Ceylon - login Now</title>
 </head>
 
 <body>
     <div class="form-container">
-        <section class="form-container">
-            <div class="title">
-                <img src="img/download.png">
-                <h1>Login Now</h1>
-                <p>Step into a world of timeless elegance and exclusive designs. Register now to unlock early access, special offers, and members-only collections</p>
+        <div class="logo-name">Aurora Ceylon</div>
+        <!-- <section class="form-container"> -->
+        <div class="title">
+
+            <h1>Login In</h1>
+        </div>
+        <form action="" method="post">
+            <div class="input-field">
+                <p>your email <sup>*</sup></p>
+                <input type="email" name="email" required placeholder="enter your email" maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
             </div>
-            <form action="" method="post">
-                <div class="input-field">
-                    <p>your email <sup>*</sup></p>
-                    <input type="email" name="email" required placeholder="enter your email" maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
-                </div>
-                <div class="input-field">
-                    <p>your password <sup>*</sup></p>
-                    <input type="password" name="pass" required placeholder="enter your password" maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
-                </div>
-                <div class="input-field">
-                    <p>confirm password <sup>*</sup></p>
-                    <input type="password" name="cpass" required placeholder="enter your password" maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
-                </div>
-                <input type="submit" name="submit" value="register now" class="btn">
-                <p>Do not have an account? <a href="login.php">Register now</a></p>
-            </form>
-        </section>
+            <div class="input-field">
+                <p>your password <sup>*</sup></p>
+                <input type="password" name="pass" required placeholder="enter your password" maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
+            </div>
+            <!-- <div class="input-field">
+                <p>confirm password <sup>*</sup></p>
+                <input type="password" name="cpass" required placeholder="enter your password" maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
+            </div> -->
+            <input type="submit" name="submit" value="Login now" class="btn">
+            <p>Do not have an account? <a href="register.php">Register now</a></p>
+        </form>
+        <!-- </section> -->
     </div>
 </body>
 

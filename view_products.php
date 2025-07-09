@@ -74,6 +74,7 @@ if (isset($_POST['add_to_cart'])) {
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="styleR.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
@@ -84,7 +85,7 @@ if (isset($_POST['add_to_cart'])) {
     <?php include 'components/header.php'; ?>
     <div class="main">
         <div class="banner">
-            <h1>shop</h1>
+            <h1>Shop Now</h1>
         </div>
         <div class="title2">
             <a href="home.php">home <span>/</span></a> our shop
