@@ -771,8 +771,8 @@ textarea {
 
 footer {
   background-image: url("img/0.webp");
-  width: 100%;
-  min-height: 73vh;
+  width: 81vw;
+  min-height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -800,18 +800,21 @@ footer .overlay {
 
 footer .inner-footer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.1rem; /* controls spacing between cards */
+  align-items: start;
   justify-content: center;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 2rem 1rem;
   color: #fff;
+  margin-left: 2rem;
 }
 
 footer .inner-footer .card {
-  margin: 0.5rem;
+  margin: 0 !important;
+  padding: 1rem;
 }
 
 footer .inner-footer .card li {
@@ -840,8 +843,8 @@ footer .inner-footer .card .social-links {
 }
 
 footer .inner-footer .card .social-links i {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   line-height: 30px;
   border-radius: 50%;
   background-color: #fff;
