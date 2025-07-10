@@ -15,24 +15,52 @@ if (isset($_POST['logout'])) {
     exit();
 }
 
+//update product in cart
+if (isset($_POST['update_cart'])) {
+    $cart_id = $_POST['cart_id'];
+    $cart_id = filter_var($cart_id, FILTER_SANITIZE_STRING);
+    $qty = $_POST['qty'];
+    $qty = filter_var($qty, FILTER_SANITIZE_STRING);
 
+
+    $update_qty = $conn->prepare("UPDATE `cart` SET qty = ? WHERE id = ?");
+    $update_qty->execute([$qty, $cart_id]);
+
+    $success_msg[] = 'Cart quantity updated successfully';
+}
 
 // Delete wishlist item
 if (isset($_POST['delete_item'])) {
-    $wishlist_id = $_POST['wishlist_id'];
-    $wishlist_id = filter_var($wishlist_id, FILTER_SANITIZE_STRING);
+    $cart_id = $_POST['cart_id'];
+    $cart_id = filter_var($cart_id, FILTER_SANITIZE_STRING);
 
-    $verify_delete_item = $conn->prepare("SELECT * FROM `wishlist` WHERE id = ?");
-    $verify_delete_item->execute([$wishlist_id]);
+    $verify_delete_item = $conn->prepare("SELECT * FROM `cart` WHERE id = ?");
+    $verify_delete_item->execute([$cart_id]);
 
     if ($verify_delete_item->rowCount() > 0) {
-        $delete_wishlist_id = $conn->prepare("DELETE FROM `wishlist` WHERE id = ?");
-        $delete_wishlist_id->execute([$wishlist_id]);
-        $success_msg[] = "Wishlist item deleted successfully";
+        $delete_cart_id = $conn->prepare("DELETE FROM `cart` WHERE id = ?");
+        $delete_cart_id->execute([$cart_id]);
+        $success_msg[] = "Cart item deleted successfully";
     } else {
-        $warning_msg[] = 'Wishlist item already deleted';
+        $warning_msg[] = 'Cart item already deleted';
     }
 }
+
+//Empty cart
+if(isset($_POST['empty_cart'])){
+    $varify_empty_item = $conn->prepare("SELECT * FROM `cart` WHERE user_id=?");
+    $varify_empty_item->execute([$user_id]);
+
+    if($varify_empty_item->rowCount() > 0){
+        $delete_cart_id = $conn->prepare("DELETE FROM `cart` WHERE user_id = ?");
+        $delete_cart_id->execute([$user_id]);
+        $success_msg[] = "Empty successfully";
+    } else {
+        $warning_msg[] = 'Cart item already deleted';
+    }  
+    }
+
+
 ?>
 <style type="text/css">
     <?php include 'style.css'; ?>
@@ -77,21 +105,20 @@ if (isset($_POST['delete_item'])) {
                             <form method="post" action="" class="box">
                                 <input type="hidden" name="cart_id" value="<?= $fetch_cart['id']; ?>">
                                 <img src="image/<?= $fetch_products['image']; ?>" class="img">
-                                <h3 class="name"></h3>
-                                <div class="button">
-                                    <button type="submit" name="add_to_cart"><i class="bx bx-cart"></i></button>
-                                    <a href="view_page.php?pid=<?= $fetch_products['id']; ?>" class="bx bxs-show"></a>
-                                    <button type="submit" name="delete_item" onclick="return confirm('Delete this item?')"><i class="bx bx-x"></i></button>
-                                </div>
-
                                 <h3 class="name"><?= $fetch_products['name']; ?></h3>
                                 <div class="flex">
-                                    <p class="price">Price: $<?= $fetch_products['price']; ?></p>
-                                    <a href="checkout.php?get_id=<?= $fetch_products['id']; ?>" class="btn">Buy Now</a>
+                                    <p class="price">Price: $<?= $fetch_products['price']; ?>/-</p>
+                                    <input type="number" name="qty" required min="1" value="<?=$fetch_cart['qty']; ?>" max="99" maxlength="2" class="qty">
+                                    <button type="submit" name="update_cart" class="bx bxs-edit fa-edit"></button>    
                                 </div>
+                                <p class="sub-total">Sub Total : <span>$<?=$sub_total = ($fetch_cart['qty'] * $fetch_cart['price']) ?></span></p>
+
+                                <button type="submit" name="delete_item" class="btn" onclick="return confirm('Delete this item')">Delete</button>
                             </form>
-                <?php
-                            $grand_total += $fetch_products['price'];
+                            <?php
+                            $grand_total += $sub_total;
+                        } else{
+                            echo '<p class="empty">Product was not found</p>';
                         }
                     }
                 } else {
@@ -99,6 +126,21 @@ if (isset($_POST['delete_item'])) {
                 }
                 ?>
             </div>
+            <?php
+                if ($grand_total !=0){
+            ?>
+             <div class="cart-total">
+                <p>Total amount payable : <span>$ <?= $grand_total; ?>/-</span></p>
+                <div class="button">
+                    <form method="post">
+                        <button type="submit" name="empty_cart" class="btn" onclick="return confirm('Are you sure to empty your cart?')">Empty cart</button>
+                    </form>
+                    <a href="checkout.php" class="btn">Proceed to checkout</a>
+                </div>
+             </div>
+             <?php } ?>
+
+            
         </section>
         <?php include 'components/footer.php'; ?>
     </div>
