@@ -595,6 +595,7 @@ textarea {
   display: block;
 }
 
+
 .container .box span {
   color: var(--green);
   font-size: 2rem;
@@ -615,10 +616,14 @@ textarea {
   padding: 2rem 1rem;
 }
 
-/*.shop .title {
+.shop .title img{
     text-align: center;
-    margin-bottom: 2rem;
-}*/
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+  
+}
 
 .shop .row {
   display: flex;

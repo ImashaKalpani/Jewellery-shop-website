@@ -141,7 +141,7 @@ if (isset($_POST['logout'])) {
                     <img src="img/about-us.jpg">
                 </div>
                 <div class="box">
-                    <img src="img/download.png">
+                    <img src="img/download.jpg" >
                     <span>Handmade Elegance</span>
                     <h1>Save up to 50% on Artisan Jewellery</h1>
                     <p>Discover the beauty of handcrafted jewellery made with love, care, and natural materials. From earthy bangles to unique pendants, each piece is designed to reflect your personality and style. Don't miss out on our limited-time offer to add a touch of artistry to your collection — for less.</p>
@@ -151,7 +151,7 @@ if (isset($_POST['logout'])) {
 
         <section class="shop">
             <div class="title">
-                <img src="img/download.png">
+                <img src="img/download1.jpg">
                 <h1>Trending Products</h1>
             </div>
             <div class="row">
