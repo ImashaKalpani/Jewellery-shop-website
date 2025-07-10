@@ -7,8 +7,8 @@
 }
 
 :root {
-  --green: #00809D;
-  --light-green: #B2C6D5;
+  --green: #d97706;
+  --light-green: #f59e0b;
   --box-shadow: 0 0 10px rgba(0 0 0/15%);
 }
 
@@ -83,7 +83,7 @@ sup {
 
 .btn {
   line-height: 2;
-  background-color: #B2C6D5;
+  background-color: #f59e0b;
   padding: 5px 35px;
   display: inline-block;
   border-radius: 30px;
@@ -407,7 +407,7 @@ textarea {
 
 .slider__slider .slide-detail h1 {
   font-size: 30px;
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
   position: relative;
   text-align: center;
@@ -435,8 +435,8 @@ textarea {
 }
 
 .slider__slider .slide-detail p {
-  font-size: 14px;
-  color: #fff;
+  font-size: 18px;
+  color: #000;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -460,19 +460,19 @@ textarea {
 }
 
 .slide1 {
-  background-image: url("img/slider.jpg");
+  background-image: url("img/home5.jpg");
 }
 .slide2 {
-  background-image: url("img/1.png");
+  background-image: url("img/home6.jpg");
 }
 .slide3 {
-  background-image: url("img/9.jpg");
+  background-image: url("img/home7.jpg");
 }
 .slide4 {
-  background-image: url("img/0.webp");
+  background-image: url("img/home8.jpg");
 }
 .slide5 {
-  background-image: url("img/4.jpg");
+  background-image: url("img/home1.jpg");
 }
 
 .left-arrow,
