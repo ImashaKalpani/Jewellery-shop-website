@@ -110,25 +110,25 @@ if (isset($_POST['logout'])) {
             <div class="box-container">
                 <div class="box">
                     <img src="img/thumb2.jpg">
-                    <h1>Green Tea</h1>
+                    <h1>Bangles</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat, quidem fugiat illum? Quisquam, impedit consequatur.</p>
                     <i class="bx bx-chevron-right"></i>
                 </div>
                 <div class="box">
                     <img src="img/thumb0.jpg">
-                    <h1>Lemon Tea</h1>
+                    <h1>Rings</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat, quidem fugiat illum? Quisquam, impedit consequatur.</p>
                     <i class="bx bx-chevron-right"></i>
                 </div>
                 <div class="box">
                     <img src="img/thumb1.jpg">
-                    <h1>green coffee</h1>
+                    <h1>Pendants</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat, quidem fugiat illum? Quisquam, impedit consequatur.</p>
                     <i class="bx bx-chevron-right"></i>
                 </div>
                 <div class="box">
                     <img src="img/thumb.jpg">
-                    <h1>Jewellery</h1>
+                    <h1>Ear Studs</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat, quidem fugiat illum? Quisquam, impedit consequatur.</p>
                     <i class="bx bx-chevron-right"></i>
                 </div>
@@ -165,27 +165,27 @@ if (isset($_POST['logout'])) {
             </div>
             <div class="box-container">
                 <div class="box">
-                    <img src="img/card.jpg">
+                    <img src="img/home_necklace.jpg">
                     <a href="view_products.php" class="btn">Shop Now</a>
                 </div>
                 <div class="box">
-                    <img src="img/card0.jpg">
+                    <img src="img/home_earrings.jpg">
                     <a href="view_products.php" class="btn">Shop Now</a>
                 </div>
                 <div class="box">
-                    <img src="img/card1.jpg">
+                    <img src="img/home_bracelet.png">
                     <a href="view_products.php" class="btn">Shop Now</a>
                 </div>
                 <div class="box">
-                    <img src="img/card2.jpg">
+                    <img src="img/home_bangle.png">
                     <a href="view_products.php" class="btn">Shop Now</a>
                 </div>
                 <div class="box">
-                    <img src="img/10.jpg">
+                    <img src="img/home_chain.png">
                     <a href="view_products.php" class="btn">Shop Now</a>
                 </div>
                 <div class="box">
-                    <img src="img/6.webp">
+                    <img src="img/home_ring.png">
                     <a href="view_products.php" class="btn">Shop Now</a>
                 </div>
             </div>

@@ -7,8 +7,8 @@
 }
 
 :root {
-  --green: #87a243;
-  --light-green: #e0ffcd;
+  --green: #00809D;
+  --light-green: #B2C6D5;
   --box-shadow: 0 0 10px rgba(0 0 0/15%);
 }
 
@@ -83,7 +83,7 @@ sup {
 
 .btn {
   line-height: 2;
-  background-color: #e0ffcd;
+  background-color: #B2C6D5;
   padding: 5px 35px;
   display: inline-block;
   border-radius: 30px;
@@ -817,7 +817,7 @@ footer .inner-footer .card .social-links i {
   text-align: center;
   color: var(--green);
   cursor: pointer;
-  padding: 0.6rem;
+  padding: 0.4rem;
   font-size: 1.3rem;
 }
 

@@ -17,34 +17,34 @@
                 <ul>
                     <li>About us</li>
                     <li>Our Difference</li>
-                    <li>Community Matters</li>
-                    <li>Press</li>
                     <li>Blog</li>
-                    <li>Bouqs Video</li>
+                    <li>Categories</li>
+                    <li>Careers</li>
+                    <li>News & Media</li>
                 </ul>
             </div>
 
             <div class="card">
                 <h3>Services</h3>
                 <ul>
-                    <li>Order</li>
+                    <li>Gifts</li>
+                    <li>Terms of Service</li>
+                    <li>Delivery & Pickup</li>
+                    <li>Return & Refund Policy</li>
+                    <li>Payment Options</li>
                     <li>Help Center</li>
-                    <li>Shipping</li>
-                    <li>Term of Use</li>
-                    <li>Account Details</li>
-                    <li>My Account</li>
                 </ul>
             </div>
 
             <div class="card">
-                <h3>Local</h3>
+                <h3>Branches</h3>
                 <ul>
-                    <li>Allahabad</li>
-                    <li>Mumbai</li>
-                    <li>New York</li>
-                    <li>New Delhi</li>
-                    <li>Old Delhi</li>
-                    <li>Los Angeles</li>
+                    <li>Colombo</li>
+                    <li>Kandy</li>
+                    <li>Kurunegala</li>
+                    <li>Mount Lavenia</li>
+                    <li>Galle</li>
+                    <li>Kaluthara</li>
                 </ul>
             </div>
 
