@@ -49,12 +49,12 @@ if (isset($_POST['logout'])) {
                     </video>
                     <div class="overlay"></div>
                     <div class="slide-detail">
-        <div class="container">
-            <h1>Welcome To My Shop</h1>
-            <p>Here, every piece is crafted with heart, inspired by nature, and made to celebrate your unique beauty...</p>
-            <a href="view_products.php" class="btn">Shop Now</a>
-        </div>
-        </div>
+                <div class="container">
+                    <h1>Welcome To My Shop</h1>
+                    <p>Here, every piece is crafted with heart, inspired by nature, and made to celebrate your unique beauty...</p>
+                    <a href="view_products.php" class="btn">Shop Now</a>
+                </div>
+                </div>
                     <div class="hero-dec-top"></div>
                     <div class="hero-dec-bottom"></div>
                 </div>
@@ -62,15 +62,16 @@ if (isset($_POST['logout'])) {
         <!-- Slide 2 -->
         <div class="slider__slider slide2">
             <video autoplay muted loop playsinline class="background-video">
-                <source src="videos/slide2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
+                <source src="img/video1.mp4" type="video/mp4">
             </video>
             <div class="overlay"></div>
             <div class="slide-detail">
+                <div class="container">
                 <h1>Crafted with Love</h1>
                 <p>Every piece tells a story. Our handmade jewellery is carefully designed and crafted with love...</p>
                 <a href="view_products.php" class="btn">Shop Now</a>
             </div>
+                </div>
             <div class="hero-dec-top"></div>
             <div class="hero-dec-bottom"></div>
         </div>
@@ -78,15 +79,16 @@ if (isset($_POST['logout'])) {
         <!-- Slide 3 -->
         <div class="slider__slider slide3">
             <video autoplay muted loop playsinline class="background-video">
-                <source src="videos/slide3.mp4" type="video/mp4">
-                Your browser does not support the video tag.
+                <source src="img/video1.mp4" type="video/mp4">
             </video>
             <div class="overlay"></div>
             <div class="slide-detail">
+                <div class="container">
                 <h1>Inspired by Nature</h1>
                 <p>From the calm of the forest to the sparkle of the sea, nature inspires our designs...</p>
                 <a href="view_products.php" class="btn">Shop Now</a>
             </div>
+                </div>
             <div class="hero-dec-top"></div>
             <div class="hero-dec-bottom"></div>
         </div>
@@ -94,15 +96,17 @@ if (isset($_POST['logout'])) {
         <!-- Slide 4 -->
         <div class="slider__slider slide4">
             <video autoplay muted loop playsinline class="background-video">
-                <source src="videos/slide4.mp4" type="video/mp4">
+                <source src="img/video1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <div class="overlay"></div>
             <div class="slide-detail">
+                <div class="container">
                 <h1>Authentic & Unique</h1>
                 <p>No two pieces are ever the same. Our jewellery celebrates individuality and craftsmanship...</p>
                 <a href="view_products.php" class="btn">Shop Now</a>
             </div>
+                </div>
             <div class="hero-dec-top"></div>
             <div class="hero-dec-bottom"></div>
         </div>
@@ -110,15 +114,17 @@ if (isset($_POST['logout'])) {
         <!-- Slide 5 -->
         <div class="slider__slider slide5">
             <video autoplay muted loop playsinline class="background-video">
-                <source src="videos/slide5.mp4" type="video/mp4">
+                <source src="img/video1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <div class="overlay"></div>
             <div class="slide-detail">
+                <div class="container">
                 <h1>Handmade in Sri Lanka</h1>
                 <p>Proudly made in Sri Lanka, our creations blend tradition, culture, and creativity...</p>
                 <a href="view_products.php" class="btn">Shop Now</a>
             </div>
+                </div>
             <div class="hero-dec-top"></div>
             <div class="hero-dec-bottom"></div>
         </div>
@@ -184,7 +190,7 @@ if (isset($_POST['logout'])) {
                 <div class="row-detail">
                     <img src="img/landscape.png">
                     <div class="top-footer">
-                        <h1>A pair of earring gives you an elegant look!</h1>
+                        <h1>Your beauty deserves something handmade.</h1>
                     </div>
                 </div>
             </div>
