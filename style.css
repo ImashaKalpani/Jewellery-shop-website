@@ -7,8 +7,8 @@
 }
 
 :root {
-  --green: #d97706;
-  --light-green: #f59e0b;
+  --green: #065084;
+  --light-green: #87A2FF;
   --box-shadow: 0 0 10px rgba(0 0 0/15%);
 }
 
@@ -83,7 +83,7 @@ sup {
 
 .btn {
   line-height: 2;
-  background-color: #f59e0b;
+  background-color: #87A2FF;
   padding: 5px 35px;
   display: inline-block;
   border-radius: 30px;
@@ -140,7 +140,7 @@ button {
 }
 
 .banner {
-  background-image: url("image/bannerPV.jpg");
+  background-image: url("img/shop_category_1.jpg");
   background-size: cover;
   background-position: center;
   background-color: var(--green);
@@ -150,12 +150,14 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .banner h1 {
   text-transform: uppercase;
-  color: #fff;
+  color: #000;
   margin-left: 3rem;
+  font-weight: 1000;
 }
 
 .title2 {
@@ -496,11 +498,11 @@ textarea {
 }
 
 .right-arrow {
-  right: 1rem;
+  right: 0rem;
 }
 
 .left-arrow {
-  left: 1rem;
+  left: 2.5rem;
 }
 
 .hero-dec-top,
@@ -589,10 +591,12 @@ textarea {
   justify-content: center;
 }
 
-.container .box img[src="img/about-us.jpg"] {
-  width: 80%;
+.container .box img[src="img/home.png"] {
+  width: 90%;
   height: auto;
   display: block;
+  margin-right: 1rem;
+  border-radius: 25%;
 }
 
 .container .box span {
@@ -624,12 +628,14 @@ textarea {
   display: flex;
   justify-content: space-evenly;
   gap: 1rem;
+  width: 55%;
+  height: 55vh;
   /*flex-wrap: wrap;*/
   margin: 2rem 0;
 }
 
 .shop .row .top-footer {
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   text-align: center !important;
   text-transform: capitalize;
   font-size: 1.5vw;
@@ -766,7 +772,7 @@ footer .overlay {
 footer .inner-footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 0.1rem; /* controls spacing between cards */
+  gap: 0; /* controls spacing between cards */
   align-items: start;
   justify-content: center;
   width: 100%;
@@ -774,7 +780,7 @@ footer .inner-footer {
   margin: 0 auto;
   padding: 2rem 1rem;
   color: #fff;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 footer .inner-footer .card {
@@ -804,6 +810,12 @@ footer .inner-footer .card p {
 }
 
 footer .inner-footer .card .social-links {
+  margin-top: 1rem;
+}
+
+footer .inner-footer .card iframe{
+  width: 175px;
+  height: 200px;
   margin-top: 1rem;
 }
 

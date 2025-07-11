@@ -193,7 +193,7 @@ if (isset($_POST['place_order'])) {
                                     <img src="image/<?= $fetch_get['image']; ?>" class="image">
                                     <div>
                                         <h3 class="name"><?= $fetch_get['name']; ?></h3>
-                                        <p class="price">$<?= $fetch_get['price']; ?></p>
+                                        <p class="price">Rs.<?= $fetch_get['price']; ?></p>
                                     </div>
                                 </div>
                                 <?php
@@ -224,7 +224,7 @@ if (isset($_POST['place_order'])) {
                         }
                         ?>
                     </div>
-                    <div class="grand-total"><span>Total Amount Payable:</span> $<?= $grand_total; ?>/-</div>
+                    <div class="grand-total"><span>Total Amount Payable:</span> Rs.<?= $grand_total; ?>/-</div>
                 </div>
             </div>
         </section>
