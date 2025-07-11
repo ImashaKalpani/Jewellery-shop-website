@@ -2,8 +2,8 @@
 
 include 'components/connection.php';
 ?>
-<style type="text/css">
-    <?php include 'style.css'; ?>
+<style       type="text/css">
+             <?php include 'style.css'; ?>
 </style>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,8 +16,8 @@ include 'components/connection.php';
 <body>
     <?php include 'components/header.php'; ?>
     <div class="main">
-<div class="banner">
-<h1> about us</h1>
+           <div class="banner">
+            <h1> about us</h1>
 </div>
 <div class ="title2">
     <a href = "home.php">home</a><span>about</span>
@@ -101,13 +101,16 @@ include 'components/connection.php';
         </section>
         <div class ="about">
             <div class="row">
+                <div class="img-box">
                 <img src ="img/3.png">
             </div>
-<div class="detail">
+            <div class="detail">
     <h1>Visit our beautiful showroom</h1>
-
     <p>
-wromm is an exprelzfj, ,fdvhzgdfjg ,dhvdfhj ,adfhgdlfj ,dfjgh.adfjg .djfbg.dfjm</p>
+our showroom is an expression of what we love doing;being creative with floral and 
+plant arrangements.whether you are looking for a florist for your perfect wedding,
+or just want to uplift any room with some one of a kind living decor,Blossom 
+with love can help.</p>
 <a href="view_products.php" class ="btn">shop now</a>
 
 </div>
@@ -121,8 +124,8 @@ wromm is an exprelzfj, ,fdvhzgdfjg ,dhvdfhj ,adfhgdlfj ,dfjgh.adfjg .djfbg.dfjm<
             dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat,
              quidem fugiat illum? Quisquam, impedit consequatur.</p>
         
-</div><div class ="container">
-
+</div>        
+             <div class ="container">
              <div class="testimonial-item active">
                 <img src ="img/01.jpg">
                 <h1>sara smith</h1>
@@ -146,16 +149,13 @@ wromm is an exprelzfj, ,fdvhzgdfjg ,dhvdfhj ,adfhgdlfj ,dfjgh.adfjg .djfbg.dfjm<
                     tempor incidiunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud 
                     exercitation ullamco laboris nisi ut aliquip exea commodo consequat.
                 </p>
-</div>
+            </div>
 <div class="left-arrow" onclick="nextSlide()"><i class="bx bxs-left-arrow-alt"></i>  </div>
 <div class="right-arrow" onclick="prevSlide()"><i class="bx bxs-right-arrow-alt"></i>  </div>
             </div>
        
     </div>
-
-
- <
-        <?php include 'components/footer.php'; ?>
+    <?php include 'components/footer.php'; ?>
     </div>
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
