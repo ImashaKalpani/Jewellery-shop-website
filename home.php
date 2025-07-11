@@ -138,7 +138,7 @@ if (isset($_POST['logout'])) {
         <section class="container">
             <div class="box-container">
                 <div class="box">
-                    <img src="img/about-us.jpg">
+                    <img src="img/home.png">
                 </div>
                 <div class="box">
                     <img src="img/download.png">
@@ -155,7 +155,7 @@ if (isset($_POST['logout'])) {
                 <h1>Trending Products</h1>
             </div>
             <div class="row">
-                <img src="img/about.jpg">
+                <img src="img/home_image.png">
                 <div class="row-detail">
                     <img src="img/basil.jpg">
                     <div class="top-footer">
@@ -264,6 +264,8 @@ if (isset($_POST['logout'])) {
                 </div>
             </div>
         </section>
+
+
 
         <?php include 'components/footer.php'; ?>
     </div>

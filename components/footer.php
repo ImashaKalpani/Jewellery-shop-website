@@ -59,6 +59,11 @@
                     <i class="bx bxl-whatsapp"></i>
                 </div>
             </div>
+
+            <div class="card">
+                <h3>Visit Us</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15844.08948283365!2d79.84748188258389!3d6.887923642756194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bdb2b0473d7%3A0x25dd59a03ad76bb4!2sColombo%2004%2C%20Colombo!5e0!3m2!1sen!2slk!4v1752239144578!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
         <div class="bottom-footer">
             <p>All right reserved</p>

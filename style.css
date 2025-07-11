@@ -7,8 +7,8 @@
 }
 
 :root {
-  --green: #d97706;
-  --light-green: #f59e0b;
+  --green: #065084;
+  --light-green: #87A2FF;
   --box-shadow: 0 0 10px rgba(0 0 0/15%);
 }
 
@@ -83,7 +83,7 @@ sup {
 
 .btn {
   line-height: 2;
-  background-color: #f59e0b;
+  background-color: #87A2FF;
   padding: 5px 35px;
   display: inline-block;
   border-radius: 30px;
@@ -140,6 +140,7 @@ button {
 }
 
 .banner {
+  background-image: url("img/shop_category_1.jpg");
   background-image: url("image/bannerPV.jpg");
   background-size: cover;
   background-position: center;
@@ -150,12 +151,14 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .banner h1 {
   text-transform: uppercase;
-  color: #fff;
+  color: #000;
   margin-left: 3rem;
+  font-weight: 1000;
 }
 
 .title2 {
@@ -496,11 +499,11 @@ textarea {
 }
 
 .right-arrow {
-  right: 1rem;
+  right: 0rem;
 }
 
 .left-arrow {
-  left: 1rem;
+  left: 2.5rem;
 }
 
 .hero-dec-top,
@@ -589,10 +592,12 @@ textarea {
   justify-content: center;
 }
 
-.container .box img[src="img/about-us.jpg"] {
-  width: 80%;
+.container .box img[src="img/home.png"] {
+  width: 90%;
   height: auto;
   display: block;
+  margin-right: 1rem;
+  border-radius: 25%;
 }
 
 .container .box span {
@@ -624,12 +629,14 @@ textarea {
   display: flex;
   justify-content: space-evenly;
   gap: 1rem;
+  width: 55%;
+  height: 55vh;
   /*flex-wrap: wrap;*/
   margin: 2rem 0;
 }
 
 .shop .row .top-footer {
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   text-align: center !important;
   text-transform: capitalize;
   font-size: 1.5vw;
@@ -766,7 +773,7 @@ footer .overlay {
 footer .inner-footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 0.1rem; /* controls spacing between cards */
+  gap: 0; /* controls spacing between cards */
   align-items: start;
   justify-content: center;
   width: 100%;
@@ -774,7 +781,7 @@ footer .inner-footer {
   margin: 0 auto;
   padding: 2rem 1rem;
   color: #fff;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 footer .inner-footer .card {
@@ -804,6 +811,12 @@ footer .inner-footer .card p {
 }
 
 footer .inner-footer .card .social-links {
+  margin-top: 1rem;
+}
+
+footer .inner-footer .card iframe{
+  width: 175px;
+  height: 200px;
   margin-top: 1rem;
 }
 
@@ -1007,74 +1020,74 @@ footer .bottom-footer {
   }
 }
 
-/*----------------about section--------------*/
-.about-category{
+/* ..................about section.....................*/
+
+.about-category {
   max-width: 1200px;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   margin: 2rem auto;
 }
-.about-category .box{
+.about-category.box {
   position: relative;
-  margin: 1rem ;
+  margin: 1rem;
   box-shadow: var(--box-shadow);
 }
-.about-category .box img{
+.about-category .box img {
   width: 60%;
 }
-.about-category .box:nth-child(3) img{
+.about-category.box:nth-child(3) img {
   width: 75%;
 }
-.about-category .box .detail{
+.about-category.box.detail {
   position: absolute;
   top: 30%;
   right: 10%;
 }
-.about-category .box .detail h1{
+.about-category.box.detail h1 {
   margin-bottom: 1.5rem;
 }
-.about-category .box .detail span{
+.about-category.box.detail span {
   text-transform: uppercase;
   font-size: 20px;
   color: #555;
 }
-.about-category .box .detail .btn{
-  opacity: .6;
+.about-category.box.detail .btn {
+  opacity: 0.6;
 }
-.about .row{
+.about.row {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.about .row .detail{
+.about.row.detail {
   width: 50%;
   margin: 1rem;
   line-height: 1.5;
   text-align: center;
 }
-.about .row .detail p{
+.about.row.detail p {
   margin-bottom: 2rem;
 }
-.about .row .img-box{
+.about.row.img-box {
   width: 50%;
 }
-.about .row .detail h1{
+.about.row.detail h1 {
   text-align: center;
   margin: 1rem 0;
-
 }
-.testimonial-container{
+.testimonial-container {
   padding: 6% 0;
-  background-image: url(img/bg.jpg);
+  background-image: url("img/bg.jpg");
 }
-.testimonial-container .container{
+.container-container.container {
   position: relative;
   perspective: 1000;
   padding-top: 2rem;
 }
-.testimonial-container .container .testimonial-item{
+.testimonial-container.container .testimonial-item {
   border-radius: 5px;
-  box-shadow: var(--box-shadow);
+  box-shadow: var(----box-shadow);
   color: gray;
   width: 50vw;
   margin: 0 auto;
@@ -1082,39 +1095,39 @@ footer .bottom-footer {
   display: none;
   padding: 1rem;
   transform-style: preserve-3d;
-  animation: slide .4s linear;
+  animation: slie 0.4s linear;
 }
-
-@keyframes slide{
-  0%{
+@keyframes slide {
+  0% {
     transform: rotateX(180deg);
   }
 }
-.testimonial-container .container .testimonial-item> *{
-  animation: slideContent .2s linear .4s backwards;;
+.testimonial-container.container .testimonial-item > * {
+  animation: slideContet 0.2s linear.4s backwards;
 }
 
-@keyframes slideContent{
-  0%{
-    transform: scale(.5);
+@keyframes slideContent {
+  0% {
+    transform: scale(0.5);
     opacity: 0;
   }
 }
-.testimonial-container .container .testimonial-item.active{
-display: block;
+.testimonial-container.container.testimonial-item.active {
+  display: block;
 }
-.testimonial-container .container .testimonial-item h1{
-color: var(--green);
-font-size: 1.3rem;
-padding-bottom: .5rem;
-text-transform: capitalize;
+
+.testimonial-container.container.testimonial-item h1 {
+  color: var(--green);
+  font-size: 1.3rem;
+  padding-bottom: 0.5rem;
+  text-transform: capitalize;
 }
-.testimonial-container .container .testimonial-item img{
+.testimonial-container.container.testimonial-item img {
   padding: 1rem 0;
   border-radius: 50%;
 }
-.testimonial-container .container .left-arrow,
-.testimonial-container .container .right-arrow{
+.testimonial-container.container.left-arrow,
+.testimonial-container.container.right-arrow {
   position: absolute;
   top: 40%;
   transform: translateY(-50%);
@@ -1123,7 +1136,7 @@ text-transform: capitalize;
   height: 40px;
   border-radius: 50%;
   color: #fff;
-  box-shadow: var(--box-shadow);
+  box-shadow: var(----box-shadow);
   background: var(--green);
   z-index: 2;
   cursor: pointer;
@@ -1132,12 +1145,13 @@ text-transform: capitalize;
   align-items: center;
   text-align: center;
 }
-.testimonial-container .container .right-arrow{
+.testimonial-container .container .right-arrow {
   right: 3rem;
 }
-.testimonial-container .container .left-arrow{
+.testimonial-container.container .left-arrow {
   left: 3rem;
 }
+
 /* ..................checkout section.....................*/
 
 .checkout .row {
