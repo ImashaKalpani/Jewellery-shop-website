@@ -18,8 +18,8 @@
         </div>
 
         <div class="user-box">
-            <p>Username : <span><?php //echo $_SESSION['user_name']; ?></span></p>
-            <p>Email : <span><?php //echo $_SESSION['user_email']; ?></span></p>
+            <p>Username : <span><?php echo $_SESSION['user_name']; ?></span></p>
+            <p>Email : <span><?php echo $_SESSION['user_email']; ?></span></p>
             <a href="login.php" class="btn">Login</a>
             <a href="register.php" class="btn">Register</a>
 
