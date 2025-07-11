@@ -219,7 +219,7 @@ if (isset($_POST['logout'])) {
         <section class="shop-category">
             <div class="box-container">
                 <div class="box">
-                    <img src="img/6.jpg">
+                    <img src="img/rack.png">
                     <div class="detail">
                         <span>BIG OFFERS</span>
                         <h1>Extra 15% off</h1>
@@ -227,7 +227,7 @@ if (isset($_POST['logout'])) {
                     </div>
                 </div>
                 <div class="box">
-                    <img src="img/7.jpg">
+                    <img src="img/mens_ring.png">
                     <div class="detail">
                         <span>New in collection</span>
                         <h1>Mens Rings</h1>
