@@ -74,11 +74,11 @@ if (isset($_POST['add_to_cart'])) {
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="styleR.css" />
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <title>Jewlery Shop - Shop page</title>
+    <title>Jewlery Shop - shop page</title>
 </head>
 
 <body>
@@ -99,7 +99,7 @@ if (isset($_POST['add_to_cart'])) {
                     while ($fetch_products = $select_products->fetch(PDO::FETCH_ASSOC)) {
                 ?>
                         <form action="" method="post" class="box">
-                            <img src="<?php echo $fetch_products['image']; ?>" class="img">
+                            <img src="image/<?php echo $fetch_products['image']; ?>" class="img">
                             <div class="button">
                                 <button type="submit" name="add_to_cart" class="bx bx-cart"></button>
                                 <button type="submit" name="add_to_wishlist" class="bx bx-heart"></button>
@@ -108,7 +108,7 @@ if (isset($_POST['add_to_cart'])) {
                             <h3 class="name"><?php echo $fetch_products['name']; ?></h3>
                             <input type="hidden" name="product_id" value="<?php echo $fetch_products['id']; ?>">
                             <div class="fles">
-                                <p class="price">$<?php echo $fetch_products['price']; ?></p>
+                                <p class="price">Rs.<?php echo $fetch_products['price']; ?></p>
                                 <input type="number" name="qty" required min="1" value="1" max="99" maxlength="2" class="qty">
                             </div>
                             <a href="checkout.php?get_id=<?php echo $fetch_products['id']; ?>" class="btn">buy now</a>
