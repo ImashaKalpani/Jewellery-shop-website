@@ -627,11 +627,16 @@ textarea {
 .shop .row {
   display: flex;
   justify-content: space-evenly;
-  gap: 1rem;
-  width: 55%;
-  height: 55vh;
+  gap: 2rem;
+  width: 65%;
+  height: 65vh;
   /*flex-wrap: wrap;*/
   margin: 2rem 0;
+}
+
+.shop .row .row-detail img{
+  width: 800px;
+  height: 250px;
 }
 
 .shop .row .top-footer {

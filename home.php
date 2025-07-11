@@ -157,7 +157,7 @@ if (isset($_POST['logout'])) {
             <div class="row">
                 <img src="img/home_image.png">
                 <div class="row-detail">
-                    <img src="img/basil.jpg">
+                    <img src="img/landscape.png">
                     <div class="top-footer">
                         <h1>A cup of green tea makes you healthy</h1>
                     </div>
