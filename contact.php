@@ -101,7 +101,7 @@
         <div class = "form-container">
     <form method="post">
         <div class="title">
-            <img src="img/download.png" class="logo">
+            <img src="img/download1.png" class="logo">
             <h1>leave a message</h1>
         </div>
         <div class="input-field">
@@ -127,7 +127,7 @@
 
      <div class="address">
         <div class="title">
-            <img src="img/download.png" class="logo">
+            <img src="img/download1.png" class="logo">
             <h1>contact details</h1>
             <p>Use this information to get in touch with us.</p>
         </div>
