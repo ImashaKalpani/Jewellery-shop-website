@@ -405,6 +405,14 @@ textarea {
   transform: translate(-50%);
   text-align: center;
   z-index: 10;
+  
+}
+
+.slider__slider .slide-detail .container {
+  background-color: rgba(255, 255, 255, 0.4); /* white with 40% opacity */
+  padding: 2rem;
+  border-radius: 15px;
+  display: inline-block;
 }
 
 .slider__slider .slide-detail h1 {
@@ -461,21 +469,8 @@ textarea {
   border-color: var(--green);
 }
 
-.slide1 {
-  background-image: url("img/home5.jpg");
-}
-.slide2 {
-  background-image: url("img/home6.jpg");
-}
-.slide3 {
-  background-image: url("img/home7.jpg");
-}
-.slide4 {
-  background-image: url("img/home8.jpg");
-}
-.slide5 {
-  background-image: url("img/home1.jpg");
-}
+
+
 
 .left-arrow,
 .right-arrow {

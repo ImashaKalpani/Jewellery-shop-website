@@ -29,7 +29,7 @@ if (isset($_POST['submit'])) {
 
     if ($select_user->rowCount() > 0) {
         $message[] = 'email already exist';
-        echo 'email already exist';
+        //echo 'email already exist';
     } else {
         if ($pass != $cpass) {
             $message[] = 'confirm your password';
@@ -250,6 +250,42 @@ if (isset($_POST['submit'])) {
                 font-size: 1.3rem;
             }
         }
+
+        .message {
+            background-color: #fddede;
+            /* Light red/pink background */
+            color: #b94a48;
+            /* Darker red text */
+            padding: 14px 20px;
+            /* Comfortable spacing */
+            border-radius: 6px;
+            /* Rounded corners */
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 600;
+            border: 1.5px solid #e17b7b;
+            /* Soft red border */
+            box-shadow: 0 2px 6px rgba(217, 83, 79, 0.3);
+            /* Subtle shadow */
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-6px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
 </head>
 
@@ -260,25 +296,33 @@ if (isset($_POST['submit'])) {
             <div class="logo-name">Aurora Ceylon</div>
             <h1>Register Now</h1>
         </div>
+        <?php
+        if (isset($message)) {
+            foreach ($message as $msg) {
+                echo '<div class="message">' . htmlspecialchars($msg) . '</div>';
+            }
+        }
+        ?>
+
         <form action="" method="post">
             <div class="input-field">
-                <p>your name <sup>*</sup></p>
+                <p>Your name <sup>*</sup></p>
                 <input type="text" name="name" required placeholder="enter your name" maxlength="50">
             </div>
             <div class="input-field">
-                <p>your email <sup>*</sup></p>
+                <p>Your email <sup>*</sup></p>
                 <input type="email" name="email" required placeholder="enter your email" maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
             </div>
             <div class="input-field">
-                <p>your password <sup>*</sup></p>
+                <p>Your password <sup>*</sup></p>
                 <input type="password" name="pass" required placeholder="enter your password" maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
             </div>
             <div class="input-field">
-                <p>confirm password <sup>*</sup></p>
+                <p>Confirm password <sup>*</sup></p>
                 <input type="password" name="cpass" required placeholder="enter your password" maxlength="50" oninput="this.value = this.value.replace(/\s/g, '')">
             </div>
             <input type="submit" name="submit" value="register now" class="btn">
-            <p>already have an account? <a href="login.php">login now</a></p>
+            <p>Already have an account? <a href="login.php">Login now</a></p>
         </form>
         <!-- </section> -->
     </div>
