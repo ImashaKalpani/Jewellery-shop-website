@@ -141,7 +141,6 @@ button {
 
 .banner {
   background-image: url("img/shop_category_1.jpg");
-  background-image: url("image/bannerPV.jpg");
   background-size: cover;
   background-position: center;
   background-color: var(--green);
