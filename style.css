@@ -460,7 +460,7 @@ textarea {
 }
 
 .slide1 {
-  background-image: url("https://img.freepik.com/premium-photo/gold-jewelry-accessories-marble_1195984-3790.jpg");
+  background-image: url("img/home5.jpg");
 }
 .slide2 {
   background-image: url("img/home6.jpg");
@@ -595,7 +595,6 @@ textarea {
   display: block;
 }
 
-
 .container .box span {
   color: var(--green);
   font-size: 2rem;
@@ -616,14 +615,10 @@ textarea {
   padding: 2rem 1rem;
 }
 
-.shop .title img{
+/*.shop .title {
     text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-  
-}
+    margin-bottom: 2rem;
+}*/
 
 .shop .row {
   display: flex;
