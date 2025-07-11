@@ -586,6 +586,33 @@ textarea {
   justify-content: center;
 }
 
+.container .box1 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .box1 img{
+  width: 100px;
+  height: 100px;
+}
+
+.container .box1 span {
+  color: var(--green);
+  font-size: 2rem;
+  margin: 1rem 0;
+  text-transform: capitalize;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.container .box1 h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
 .container .box img[src="img/home.png"] {
   width: 90%;
   height: auto;
@@ -614,10 +641,12 @@ textarea {
   padding: 2rem 1rem;
 }
 
-/*.shop .title {
+.shop .title img{
     text-align: center;
-    margin-bottom: 2rem;
-}*/
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+}
 
 .shop .row {
   display: flex;
