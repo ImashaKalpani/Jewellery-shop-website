@@ -295,6 +295,13 @@ textarea {
   height: 200px;
 }
 
+.form-container .title img{
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
 .form-container p {
   color: var(--green);
 }
@@ -336,6 +343,13 @@ textarea {
   background-image: url("img/bg.jpg");
   padding: 4rem 0;
   min-height: 50vh;
+}
+
+.address .title img{
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
 }
 
 .address .box-container {
@@ -405,6 +419,14 @@ textarea {
   transform: translate(-50%);
   text-align: center;
   z-index: 10;
+  
+}
+
+.slider__slider .slide-detail .container {
+  background-color: rgba(255, 255, 255, 0.4); /* white with 40% opacity */
+  padding: 2rem;
+  border-radius: 15px;
+  display: inline-block;
 }
 
 .slider__slider .slide-detail h1 {
@@ -461,21 +483,8 @@ textarea {
   border-color: var(--green);
 }
 
-.slide1 {
-  background-image: url("img/home5.jpg");
-}
-.slide2 {
-  background-image: url("img/home6.jpg");
-}
-.slide3 {
-  background-image: url("img/home7.jpg");
-}
-.slide4 {
-  background-image: url("img/home8.jpg");
-}
-.slide5 {
-  background-image: url("img/home1.jpg");
-}
+
+
 
 .left-arrow,
 .right-arrow {
@@ -591,6 +600,33 @@ textarea {
   justify-content: center;
 }
 
+.container .box1 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .box1 img{
+  width: 100px;
+  height: 100px;
+}
+
+.container .box1 span {
+  color: var(--green);
+  font-size: 2rem;
+  margin: 1rem 0;
+  text-transform: capitalize;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.container .box1 h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
 .container .box img[src="img/home.png"] {
   width: 90%;
   height: auto;
@@ -619,19 +655,26 @@ textarea {
   padding: 2rem 1rem;
 }
 
-/*.shop .title {
+.shop .title img{
     text-align: center;
-    margin-bottom: 2rem;
-}*/
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+}
 
 .shop .row {
   display: flex;
   justify-content: space-evenly;
-  gap: 1rem;
-  width: 55%;
-  height: 55vh;
+  gap: 2rem;
+  width: 65%;
+  height: 65vh;
   /*flex-wrap: wrap;*/
   margin: 2rem 0;
+}
+
+.shop .row .row-detail img{
+  width: 800px;
+  height: 275px;
 }
 
 .shop .row .top-footer {
@@ -645,7 +688,6 @@ textarea {
 .shop .box-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* 3 columns */
   gap: 2rem;
   padding: 0 1rem;
 }
@@ -675,6 +717,7 @@ textarea {
   position: relative;
   color: #fff;
   margin-bottom: 2rem;
+  font-weight: 800;
 }
 
 .shop-category .box-container {
@@ -683,7 +726,7 @@ textarea {
 
 .shop-category .detail {
   position: absolute;
-  top: 20%;
+  top: 55%;
   left: 5%;
   line-height: 2;
   text-align: center;
@@ -719,6 +762,7 @@ textarea {
   text-align: center;
 }
 
+
 /*.........footer section........*/
 
 .top-footer {
@@ -741,7 +785,7 @@ textarea {
 }
 
 footer {
-  background-image: url("img/0.webp");
+  background-image: url("img/footerimg.png");
   width: 81vw;
   min-height: 70vh;
   background-repeat: no-repeat;

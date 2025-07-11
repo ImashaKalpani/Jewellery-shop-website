@@ -71,37 +71,28 @@
                         </div>
                     </section>
 
-                    <section class="brand">
-                        <div class="box-container">
-                        
-                        <div class="box">
-                            <img src="img/brand (1).jpg">
-                        </div>
-                        
-                        <div class="box">
-                            <img src="img/brand (2).jpg">
-                        </div>
-                        
-                        <div class="box">
-                            <img src="img/brand (3).jpg">
-                        </div>
-                        
-                        <div class="box">
-                            <img src="img/brand (4).jpg">
-                        </div>
-                        
-                        <div class="box">
-                            <img src="img/brand (5).jpg">
-                        </div>
-
-                        </div>
-                    </section>
+                      <section class="brand">
+            <div class="box-container">
+                <div class="box">
+                    <img src="img/brand1.png" style="width: 200px; height: auto;">
+                </div>
+                <div class="box">
+                    <img src="img/brand2.png" style="width: 200px; height: auto;">
+                </div>
+                <div class="box">
+                   <img src="img/brand4.png" style="width: 200px; height: auto;">
+                </div>
+                <div class="box">
+                   <img src="img/brand3.png" style="width: 200px; height: auto;">
+                </div>
+            </div>
+        </section>
 
 
         <div class = "form-container">
     <form method="post">
         <div class="title">
-            <img src="img/download.png" class="logo">
+           <img src="img/download1.png" class="logo" style="width: 100px; height: auto;">
             <h1>leave a message</h1>
         </div>
         <div class="input-field">
@@ -127,7 +118,7 @@
 
      <div class="address">
         <div class="title">
-            <img src="img/download.png" class="logo">
+            <img src="img/download1.png" class="logo" style="width: 100px; height: auto;">
             <h1>contact details</h1>
             <p>Use this information to get in touch with us.</p>
         </div>

@@ -40,70 +40,101 @@ if (isset($_POST['logout'])) {
     <div class="main">
 
         <section class="home-section">
-            <div class="slider">
+    <div class="slider">
+
+        <!-- Slide 1 -->
                 <div class="slider__slider slide1">
+                    <video autoplay muted loop playsinline class="background-video">
+                        <source src="img/video1.mp4" type="video/mp4">
+                    </video>
                     <div class="overlay"></div>
                     <div class="slide-detail">
-                        <h1>Welcome To My Shop</h1>
-                        <p>Here, every piece is crafted with heart, inspired by nature, and made to celebrate your unique beauty. Whether you're looking for something simple, bold, or one-of-a-kind, you'll find something here that speaks to your soul. Thank you for supporting small, meaningful creations — and for being part of this journey with me.</p>
-                        <a href="view_products.php" class="btn">Shop Now</a>
-                    </div>
+                <div class="container">
+                    <h1>Welcome To My Shop</h1>
+                    <p>Here, every piece is crafted with heart, inspired by nature, and made to celebrate your unique beauty...</p>
+                    <a href="view_products.php" class="btn">Shop Now</a>
+                </div>
+                </div>
                     <div class="hero-dec-top"></div>
                     <div class="hero-dec-bottom"></div>
                 </div>
-                <!-- Slide end -->
 
-                <div class="slider__slider slide2">
-                    <div class="overlay"></div>
-                    <div class="slide-detail">
-                        <h1>Crafted with Love</h1>
-                        <p>Every piece tells a story. Our handmade jewellery is carefully designed and crafted with love, bringing you the warmth and uniqueness of true artistry. Feel the personal touch in every detail.</p>
-                        <a href="view_products.php" class="btn">Shop Now</a>
-                    </div>
-                    <div class="hero-dec-top"></div>
-                    <div class="hero-dec-bottom"></div>
-                </div>
-                <!-- Slide end -->
-
-                <div class="slider__slider slide3">
-                    <div class="overlay"></div>
-                    <div class="slide-detail">
-                        <h1>Inspired by Nature</h1>
-                        <p>From the calm of the forest to the sparkle of the sea, nature inspires our designs. We use earthy tones, natural textures, and timeless patterns to reflect the beauty of the world around us.</p>
-                        <a href="view_products.php" class="btn">Shop Now</a>
-                    </div>
-                    <div class="hero-dec-top"></div>
-                    <div class="hero-dec-bottom"></div>
-                </div>
-                <!-- Slide end -->
-
-                <div class="slider__slider slide4">
-                    <div class="overlay"></div>
-                    <div class="slide-detail">
-                        <h1>Authentic & Unique</h1>
-                        <p>No two pieces are ever the same. Whether you're gifting or treating yourself, our jewellery celebrates individuality and craftsmanship, made just for you — and no one else.</p>
-                        <a href="view_products.php" class="btn">Shop Now</a>
-                    </div>
-                    <div class="hero-dec-top"></div>
-                    <div class="hero-dec-bottom"></div>
-                </div>
-                <!-- Slide end -->
-
-                <div class="slider__slider slide5">
-                    <div class="overlay"></div>
-                    <div class="slide-detail">
-                        <h1>Handmade in Sri Lanka</h1>
-                        <p>Proudly made in Sri Lanka, our creations blend tradition, culture, and creativity. Support local artisans and carry a piece of Sri Lankan charm wherever you go.</p>
-                        <a href="view_products.php" class="btn">Shop Now</a>
-                    </div>
-                    <div class="hero-dec-top"></div>
-                    <div class="hero-dec-bottom"></div>
-                </div>---
-                <!-- Slide end -->
-                <div class="left-arrow"><i class="bx bxs-left-arrow"></i></div>
-                <div class="right-arrow"><i class="bx bxs-right-arrow"></i></div>
+        <!-- Slide 2 -->
+        <div class="slider__slider slide2">
+            <video autoplay muted loop playsinline class="background-video">
+                <source src="img/video1.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"></div>
+            <div class="slide-detail">
+                <div class="container">
+                <h1>Crafted with Love</h1>
+                <p>Every piece tells a story. Our handmade jewellery is carefully designed and crafted with love...</p>
+                <a href="view_products.php" class="btn">Shop Now</a>
             </div>
-        </section>
+                </div>
+            <div class="hero-dec-top"></div>
+            <div class="hero-dec-bottom"></div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slider__slider slide3">
+            <video autoplay muted loop playsinline class="background-video">
+                <source src="img/video1.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"></div>
+            <div class="slide-detail">
+                <div class="container">
+                <h1>Inspired by Nature</h1>
+                <p>From the calm of the forest to the sparkle of the sea, nature inspires our designs...</p>
+                <a href="view_products.php" class="btn">Shop Now</a>
+            </div>
+                </div>
+            <div class="hero-dec-top"></div>
+            <div class="hero-dec-bottom"></div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slider__slider slide4">
+            <video autoplay muted loop playsinline class="background-video">
+                <source src="img/video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="overlay"></div>
+            <div class="slide-detail">
+                <div class="container">
+                <h1>Authentic & Unique</h1>
+                <p>No two pieces are ever the same. Our jewellery celebrates individuality and craftsmanship...</p>
+                <a href="view_products.php" class="btn">Shop Now</a>
+            </div>
+                </div>
+            <div class="hero-dec-top"></div>
+            <div class="hero-dec-bottom"></div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="slider__slider slide5">
+            <video autoplay muted loop playsinline class="background-video">
+                <source src="img/video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="overlay"></div>
+            <div class="slide-detail">
+                <div class="container">
+                <h1>Handmade in Sri Lanka</h1>
+                <p>Proudly made in Sri Lanka, our creations blend tradition, culture, and creativity...</p>
+                <a href="view_products.php" class="btn">Shop Now</a>
+            </div>
+                </div>
+            <div class="hero-dec-top"></div>
+            <div class="hero-dec-bottom"></div>
+        </div>
+
+        <!-- Arrows -->
+        <div class="left-arrow"><i class="bx bxs-left-arrow"></i></div>
+        <div class="right-arrow"><i class="bx bxs-right-arrow"></i></div>
+    </div>
+</section>
+
         <!-------home slider end----->
 
         <section class="thumb">
@@ -140,8 +171,8 @@ if (isset($_POST['logout'])) {
                 <div class="box">
                     <img src="img/home.png">
                 </div>
-                <div class="box">
-                    <img src="img/download.png">
+                <div class="box1">
+                    <img src="img/download1.png">
                     <span>Handmade Elegance</span>
                     <h1>Save up to 50% on Artisan Jewellery</h1>
                     <p>Discover the beauty of handcrafted jewellery made with love, care, and natural materials. From earthy bangles to unique pendants, each piece is designed to reflect your personality and style. Don't miss out on our limited-time offer to add a touch of artistry to your collection — for less.</p>
@@ -151,15 +182,15 @@ if (isset($_POST['logout'])) {
 
         <section class="shop">
             <div class="title">
-                <img src="img/download.png">
+                <img src="img/download1.png">
                 <h1>Trending Products</h1>
             </div>
             <div class="row">
                 <img src="img/home_image.png">
                 <div class="row-detail">
-                    <img src="img/basil.jpg">
+                    <img src="img/landscape.png">
                     <div class="top-footer">
-                        <h1>A cup of green tea makes you healthy</h1>
+                        <h1>Your beauty deserves something handmade.</h1>
                     </div>
                 </div>
             </div>
@@ -194,7 +225,7 @@ if (isset($_POST['logout'])) {
         <section class="shop-category">
             <div class="box-container">
                 <div class="box">
-                    <img src="img/6.jpg">
+                    <img src="img/rack.png">
                     <div class="detail">
                         <span>BIG OFFERS</span>
                         <h1>Extra 15% off</h1>
@@ -202,7 +233,7 @@ if (isset($_POST['logout'])) {
                     </div>
                 </div>
                 <div class="box">
-                    <img src="img/7.jpg">
+                    <img src="img/mens_ring.png">
                     <div class="detail">
                         <span>New in collection</span>
                         <h1>Mens Rings</h1>
@@ -245,22 +276,19 @@ if (isset($_POST['logout'])) {
             </div>
         </section>
 
-        <section class="brand">
+           <section class="brand">
             <div class="box-container">
                 <div class="box">
-                    <img src="img/brand (1).jpg">
+                    <img src="img/brand1.png" style="width: 200px; height: auto;">
                 </div>
                 <div class="box">
-                    <img src="img/brand (2).jpg">
+                    <img src="img/brand2.png" style="width: 200px; height: auto;">
                 </div>
                 <div class="box">
-                    <img src="img/brand (3).jpg">
+                   <img src="img/brand4.png" style="width: 200px; height: auto;">
                 </div>
                 <div class="box">
-                    <img src="img/brand (4).jpg">
-                </div>
-                <div class="box">
-                    <img src="img/brand (5).jpg">
+                   <img src="img/brand3.png" style="width: 200px; height: auto;">
                 </div>
             </div>
         </section>
