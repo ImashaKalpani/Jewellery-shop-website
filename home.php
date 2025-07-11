@@ -190,7 +190,7 @@ if (isset($_POST['logout'])) {
                 <div class="row-detail">
                     <img src="img/landscape.png">
                     <div class="top-footer">
-                        <h1>A cup of green tea makes you healthy</h1>
+                        <h1>Your beauty deserves something handmade.</h1>
                     </div>
                 </div>
             </div>
