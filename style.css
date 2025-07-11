@@ -631,7 +631,7 @@ textarea {
 
 .shop .row .row-detail img{
   width: 800px;
-  height: 250px;
+  height: 275px;
 }
 
 .shop .row .top-footer {
@@ -645,7 +645,6 @@ textarea {
 .shop .box-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* 3 columns */
   gap: 2rem;
   padding: 0 1rem;
 }
@@ -675,6 +674,7 @@ textarea {
   position: relative;
   color: #fff;
   margin-bottom: 2rem;
+  font-weight: 800;
 }
 
 .shop-category .box-container {
@@ -683,7 +683,7 @@ textarea {
 
 .shop-category .detail {
   position: absolute;
-  top: 20%;
+  top: 55%;
   left: 5%;
   line-height: 2;
   text-align: center;
