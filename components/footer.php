@@ -54,7 +54,6 @@
                 <div class="social-links">
                     <i class="bx bxl-instagram"></i>
                     <i class="bx bxl-twitter"></i>
-                    <i class="bx bxl-behance"></i>
                     <i class="bx bxl-youtube"></i>
                     <i class="bx bxl-whatsapp"></i>
                 </div>
