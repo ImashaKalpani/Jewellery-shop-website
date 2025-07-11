@@ -78,7 +78,7 @@ if (isset($_POST['add_to_cart'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <title>Jewlery Shop - shop page</title>
+    <title>Jewlery Shop - Shop page</title>
 </head>
 
 <body>
@@ -99,7 +99,7 @@ if (isset($_POST['add_to_cart'])) {
                     while ($fetch_products = $select_products->fetch(PDO::FETCH_ASSOC)) {
                 ?>
                         <form action="" method="post" class="box">
-                            <img src="image/<?php echo $fetch_products['image']; ?>" class="img">
+                            <img src="<?php echo $fetch_products['image']; ?>" class="img">
                             <div class="button">
                                 <button type="submit" name="add_to_cart" class="bx bx-cart"></button>
                                 <button type="submit" name="add_to_wishlist" class="bx bx-heart"></button>
