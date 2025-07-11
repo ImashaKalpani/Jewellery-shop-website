@@ -297,7 +297,7 @@ textarea {
   color: var(--green);
 }
 
-.form-container sup {
+.form-container span {
   color: red;
   font-size: 1.2rem;
 }

@@ -105,19 +105,19 @@
             <h1>leave a message</h1>
         </div>
         <div class="input-field">
-            <P> your name<sup>*</sup></p>
+            <P> your name<span>*</span></p>
             <input type="text" name="name">
         </div>
          <div class="input-field">
-            <P> your email<sup>*</sup></p>
+            <P> your email<span>*</span></p>
             <input type="email" name="email">
         </div>
          <div class="input-field">
-            <P> your number<sup>*</sup></p>
+            <P> your number<span>*</span></p>
             <input type="text" name="number">
         </div>
          <div class="input-field">
-            <P> your message<sup>*</sup></p>
+            <P> your message<span>*</span></p>
             <textarea name="message"></textarea>
         </div>
         <button type="submit" name="submit-btn" class="btn">send message</button>
