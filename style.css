@@ -937,12 +937,12 @@ footer .bottom-footer {
 
 
 
-/*----------view product---------------*/
+/*----------view order product---------------*/
 
 .orders .box-container{
   padding: 2% 6%;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  align-items: flex-start;
+ align-items: flex-start;
   justify-content: center;
   gap: 1.5rem;
 }
@@ -980,10 +980,10 @@ footer .bottom-footer {
   height: 20rem;
   width: 100%;
   object-fit: contain;
-  margin-left: -4rem;
+  margin-left: 0;
 }
 
-.orders .box-container .box .name{
+.orders .box-container .box .name{ 
   font-size: 1rem;
   text-transform: capitalize;
   text-overflow: ellipsis;
@@ -1007,7 +1007,7 @@ footer .bottom-footer {
 }
 
 
-/*.........view order section...........*/
+/*.........view my order section...........*/
 .order-detail .box-container{
   box-shadow: var(----box-shadow);
   border-radius: .5rem;
@@ -1380,9 +1380,15 @@ text-transform: capitalize;
 
 .products .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   margin: 2rem 0;
+}
+
+.products .box-container1 .title h1{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .products .box {

@@ -41,11 +41,11 @@ if (isset($_POST['logout'])) {
         </div>
 
         <section class="products">
-            <div class="box-container">
+            <div class="box-container1">
                 <div class="title">
                     <img src="img/download.png" class="logo">
-                    <h1>My Order</h1>
-                    <p>Each piece is crafted with love, care, and attention to detail. Please browse your past orders below. If you have any questions, feel free to contact us.</p>
+                    <h1>Thank you for choosing our handmade jewellery!</h1>
+                        <p>Each piece is crafted with love, care, and attention to detail. Please browse your past orders below. If you have any questions, feel free to contact us.</p>
                 </div>
 
                 <div class="box-container">
