@@ -1173,6 +1173,13 @@ footer .bottom-footer {
   justify-content: center;
   align-items: center;
 }
+
+.about .row img{
+  width: 500px;
+  height: 350px;
+  border-radius: 20%;
+  margin-bottom: 3rem;
+}
 .about .row .detail{
   width: 50%;
   margin: 1rem;
@@ -1247,6 +1254,8 @@ padding-bottom: .5rem;
 text-transform: capitalize;
 }
 .testimonial-container .container .testimonial-item img{
+  height: 250px;
+  width: 220px;
   padding: 1rem 0;
   border-radius: 50%;
 }

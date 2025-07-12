@@ -104,15 +104,11 @@ include 'components/connection.php';
         <div class="about">
             <div class="row">
                 <div class="img-box">
-                    <img src="img/c.jpg">
+                    <img src="img/home1.jpg">
                 </div>
                 <div class="detail">
-                    <h1>Visit our beautiful showroom</h1>
-                    <p>
-                        our showroom is an expression of what we love doing;being creative with floral and
-                        plant arrangements.whether you are looking for a florist for your perfect wedding,
-                        or just want to uplift any room with some one of a kind living decor,Blossom
-                        with love can help.</p>
+                    <h1>Visit Our Showroom – Where Elegance Comes to Life</h1>
+                    <p>We warmly invite you to visit our Aurora Ceylon showroom and experience the elegance of our handmade jewellery up close. Discover the beauty, craftsmanship, and stories behind each piece in person. Whether you're looking for something special or simply wish to explore, our team is here to welcome you with a smile. Come feel the sparkle!</p>
                     <a href="view_products.php" class="btn">shop now</a>
 
                 </div>
