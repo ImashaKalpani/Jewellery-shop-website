@@ -295,6 +295,13 @@ textarea {
   height: 200px;
 }
 
+.form-container .title img{
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
 .form-container p {
   color: var(--green);
 }
@@ -336,6 +343,13 @@ textarea {
   background-image: url("img/bg.jpg");
   padding: 4rem 0;
   min-height: 50vh;
+}
+
+.address .title img{
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
 }
 
 .address .box-container {
@@ -748,6 +762,7 @@ textarea {
   text-align: center;
 }
 
+
 /*.........footer section........*/
 
 .top-footer {
@@ -770,7 +785,7 @@ textarea {
 }
 
 footer {
-  background-image: url("img/0.webp");
+  background-image: url("img/footerimg.png");
   width: 81vw;
   min-height: 70vh;
   background-repeat: no-repeat;

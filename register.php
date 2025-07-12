@@ -69,13 +69,13 @@ if (isset($_POST['submit'])) {
         }
 
         body {
-            background: #fdf6ed;
+            background: #f0f7fd;
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 20px;
-            color: #2b2b2b;
+            color: #1e3a5f;
             position: relative;
         }
 
@@ -84,7 +84,7 @@ if (isset($_POST['submit'])) {
             content: '';
             position: absolute;
             inset: 0;
-            background: radial-gradient(circle at 50% 50%, rgba(249, 168, 37, 0.05), transparent 70%);
+            background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.05), transparent 70%);
             pointer-events: none;
             z-index: 0;
         }
@@ -97,7 +97,7 @@ if (isset($_POST['submit'])) {
             max-width: 460px;
             position: relative;
             box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
-            border: 1px solid #f2eae2;
+            border: 1px solid #e2effa;
             animation: slideIn 0.5s ease;
             z-index: 1;
         }
@@ -111,7 +111,7 @@ if (isset($_POST['submit'])) {
             transform: translateX(-50%);
             width: 70px;
             height: 3px;
-            background: linear-gradient(to right, #d97706, #f59e0b);
+            background: linear-gradient(to right, #2563eb, #3b82f6);
             border-radius: 0 0 3px 3px;
         }
 
@@ -119,7 +119,7 @@ if (isset($_POST['submit'])) {
             text-align: center;
             font-size: 2.2rem;
             font-weight: 700;
-            color: #d97706;
+            color: #2563eb;
             margin-bottom: 18px;
             letter-spacing: 1px;
         }
@@ -130,12 +130,12 @@ if (isset($_POST['submit'])) {
         }
 
         .title h1 {
-            color: #2b2b2b;
+            color: #1e3a5f;
             font-size: 1.4rem;
         }
 
         .title p {
-            color: #555555;
+            color: #475569;
             font-size: 0.95rem;
             margin-top: 8px;
             line-height: 1.4;
@@ -146,43 +146,43 @@ if (isset($_POST['submit'])) {
         }
 
         .input-field p {
-            color: #333;
+            color: #1e293b;
             font-size: 0.85rem;
             margin-bottom: 5px;
             font-weight: 500;
         }
 
         .input-field sup {
-            color: #e11d48;
+            color: #2563eb;
             font-size: 0.8rem;
         }
 
         .input-field input {
             width: 100%;
             padding: 11px 14px;
-            background: #fffdfb;
-            border: 1px solid #ccc;
+            background: #f8fbff;
+            border: 1px solid #cbd5e1;
             border-radius: 6px;
-            color: #333;
+            color: #1e293b;
             font-size: 0.95rem;
             transition: border 0.3s ease, box-shadow 0.3s ease;
         }
 
         .input-field input:focus {
-            border-color: #d97706;
-            box-shadow: 0 0 0 2px rgba(217, 119, 6, 0.2);
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
             outline: none;
-            background: #fffaf4;
+            background: #f0f8ff;
         }
 
         .input-field input::placeholder {
-            color: #aaa;
+            color: #94a3b8;
         }
 
         .btn {
             width: 100%;
             padding: 12px;
-            background: #d97706;
+            background: #2563eb;
             border: none;
             border-radius: 6px;
             color: #fff;
@@ -195,9 +195,9 @@ if (isset($_POST['submit'])) {
         }
 
         .btn:hover {
-            background: #f59e0b;
+            background: #3b82f6;
             transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
         }
 
         .btn:active {
@@ -206,20 +206,20 @@ if (isset($_POST['submit'])) {
 
         form>p {
             text-align: center;
-            color: #777;
+            color: #64748b;
             font-size: 0.85rem;
             margin-top: 15px;
         }
 
         form>p a {
-            color: #d97706;
+            color: #2563eb;
             font-weight: 600;
             text-decoration: none;
             transition: color 0.3s ease;
         }
 
         form>p a:hover {
-            color: #f59e0b;
+            color: #3b82f6;
             text-decoration: underline;
         }
 
@@ -228,6 +228,36 @@ if (isset($_POST['submit'])) {
             from {
                 opacity: 0;
                 transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Message alert */
+        .message {
+            background-color: #e0f2ff;
+            color: #1e40af;
+            padding: 14px 20px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 600;
+            border: 1.5px solid #93c5fd;
+            box-shadow: 0 2px 6px rgba(59, 130, 246, 0.25);
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeIn 0.4s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-6px);
             }
 
             to {
