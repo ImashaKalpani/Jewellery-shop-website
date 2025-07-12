@@ -49,7 +49,7 @@
             </div>
 
             <div class="card">
-                <h3>Newsletter</h3>
+                <h3>Newslatter</h3>
                 <p>Sign Up For Newslatter</p>
                 <div class="social-links">
                     <a href="https://www.instagram.com/"><i class="bx bxl-instagram"></i></a>
