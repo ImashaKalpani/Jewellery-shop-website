@@ -43,7 +43,7 @@ if (isset($_POST['logout'])) {
         <section class="products">
             <div class="box-container1">
                 <div class="title">
-                    <img src="img/download.png" class="logo">
+                    <img src="img/download1.png" class="logo">
                     <h1>Thank you for choosing our handmade jewellery!</h1>
                         <p>Each piece is crafted with love, care, and attention to detail. Please browse your past orders below. If you have any questions, feel free to contact us.</p>
                 </div>

@@ -63,7 +63,7 @@ include 'components/connection.php';
         
 <section class="services">
     <div class="title">
-        <img src="img/download.png" class= "logo">
+        <img src="img/download1.png" class="logo">
         <h1>why choose us</h1>
         <p>lorem ishdfgssmhjsg ,sdhfg,shf shd,hfdhgf ,shfh,sdf ,fdhbghhh</p>
 
@@ -118,7 +118,7 @@ with love can help.</p>
  </div>
  <div class ="testimonial-container">
     <div class="title">
-        <img src ="img/download.png" class="logo">
+        <img src ="img/download1.png" class="logo">
         <h1>what people say about us </h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium 
             dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat,

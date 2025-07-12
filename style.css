@@ -1188,8 +1188,13 @@ footer .bottom-footer {
 .about .row .detail h1{
   text-align: center;
   margin: 1rem 0;
-
 }
+
+.services .title img{
+  height: 100px;
+  width:100px;
+}
+
 .testimonial-container{
   padding: 6% 0;
   background-image: url(img/bg.jpg);
@@ -1210,6 +1215,11 @@ footer .bottom-footer {
   padding: 1rem;
   transform-style: preserve-3d;
   animation: slide .4s linear;
+}
+
+.testimonial-container .title img{
+  height: 100px;
+  width: 100px;
 }
 
 @keyframes slide{
@@ -1389,6 +1399,11 @@ text-transform: capitalize;
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+
+.products .box-container1 .title img{
+  height: 100px;
+  width: 100px;
 }
 
 .products .box {
