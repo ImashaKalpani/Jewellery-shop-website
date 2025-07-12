@@ -52,10 +52,10 @@
                 <h3>Newsletter</h3>
                 <p>Sign Up For Newslatter</p>
                 <div class="social-links">
-                    <i class="bx bxl-instagram"></i>
-                    <i class="bx bxl-twitter"></i>
-                    <i class="bx bxl-youtube"></i>
-                    <i class="bx bxl-whatsapp"></i>
+                    <a href="https://www.instagram.com/"><i class="bx bxl-instagram"></i></a>
+                    <a href="https://x.com/?lang=en"><i class="bx bxl-twitter"></i></a>
+                    <a href="https://www.youtube.com/?feature=youtu.be"><i class="bx bxl-youtube"></i></a>
+                    <a href="https://www.whatsapp.com/"><i class="bx bxl-whatsapp"></i></a>
                 </div>
             </div>
 
