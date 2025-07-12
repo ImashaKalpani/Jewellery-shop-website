@@ -483,9 +483,6 @@ textarea {
   border-color: var(--green);
 }
 
-
-
-
 .left-arrow,
 .right-arrow {
   position: absolute;
@@ -937,89 +934,78 @@ footer .bottom-footer {
 .cart-total .button .btn {
   margin: 1rem;
 }
-/*.........view order section...........*/
-.order-detail .box-container{
-  box-shadow: var(----box-shadow);
-  border-radius: .5rem;
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 1rem auto;
-}
-.order-detail .box-container .box{
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+
+
+
+/*----------view order---------------*/
+
+.orders .box-container{
+  padding: 2% 6%;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   align-items: flex-start;
-  overflow-x: hidden;
+  justify-content: center;
+  gap: 1.5rem;
 }
-.order-detail .box-container .box .col{
-  flex: 1 1 30rem;
-  font-size: 1rem;
-}
-.order-detail .box-container .box .col .image{
-  height: 17rem;
-  width: 100%;
-  object-fit: fill;
-  margin: 1rem 0;
-}
-.order-detail .box-container .box .col .title{
+
+.orders .box-container .box{
+  box-shadow: var(--box-shadow);
   border-radius: .5rem;
-  margin-bottom: 1rem;
-  padding: .5rem 2rem;
-  font-size: 1rem;
-  color: var(--light-green);
-  border: 2px solid var(--green);
-  display: inline-block;
-  text-transform: capitalize;
-}
-.order-detail .box-container .box .col .title i{
-  margin-right: 1rem;
-  color: #000;
-}
-.order-detail .box-container .box .col .price{
-  color: crimson;
-  font-size: 1rem;
-  padding: .5rem 0;
-  margin-top: -3rem;
-}
-.order-detail .box-container .box .col .name{
-  font-size: 1.5rem;
-  color: #000;
-  text-overflow: ellipsis;
+  position: relative;
   overflow-x: hidden;
 }
-.order-detail .box-container .box .col .user{
-  padding: .5rem 0;
-  font-size: 1.3rem;
-  color: #000;
-}
-.order-detail .box-container .box .col .user i{
-  margin-right: 1rem;
-  color: gray;
-}
-.order-detail .box-container .box .col .grand-total{
+
+.orders .box-container .box a{
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: .5rem;
-  flex-wrap: wrap;
-  background: var(--green);
+}
+
+.orders .box-container .box a .row{
+  position: absolute;
+  right: 1%;
+}
+
+.orders .box-container .box .date{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: .5rem 1.5rem;
+  background: var(--light-green);
+  font-size: .6rem;
+  display: inline-block;
+  margin-bottom: 1.5rem;
   border-radius: .5rem;
-  text-transform: capitalize;
 }
-.order-detail .box-container .box .col .grand-total span{
-  color: orange;
-}
-.order-detail .box-container .box .col .status{
-  font-size: 1.4rem;
-  padding: .5rem 0;
-  text-transform: capitalize;
-}
-.order-detail .box-container .box .col .btn{
+
+.orders .box-container .box .image{
+  height: 20rem;
   width: 100%;
-  border-radius: .5rem;
-  border: 1px solid var(--green);
+  object-fit: contain;
 }
+
+.orders .box-container .box .name{
+  font-size: 1rem;
+  text-transform: capitalize;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  color: #000;
+}
+
+.orders .box-container .box .price{
+  color: orange;
+  font-size: 1rem;
+}
+
+.orders .box-container .box .status{
+  margin-left: .5rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.orders .box-container .box:hover{
+  box-shadow: var(--box-shadow);
+}
+
+
 
 /*.........media screen........*/
 
@@ -1299,7 +1285,7 @@ text-transform: capitalize;
 }
 
 
-/* View Products */
+/* View Products section */
 
 .products {
   padding: 2rem;
@@ -1388,4 +1374,54 @@ text-transform: capitalize;
 .products .btn {
   margin-top: 1rem;
   width: 100%;
+}
+
+.products .box-container .box .flex .fa-edit{
+  border-radius: .5rem;
+  font-size: 1.7rem;
+  color: #fff;
+  height: 2rem;
+  width: 3rem;
+  cursor: pointer;
+  background: var(--green);
+  margin-left: .5rem;
+}
+
+.products .box-container .box .flex .fa-edit:hover{
+  background: var(--light-green);
+  color: #000;
+}
+
+.products .box-container .box .sub-total{
+  padding-bottom: 1rem;
+  font-size: 1.7rem;
+  color: gray;
+}
+
+.products .box-container .box .sub-total span{
+  color: red;
+}
+
+.products .box-container .box button{
+  align-items: center;
+}
+
+.products .cart-total{
+  box-shadow: var(----box-shadow);
+  border-radius: .5rem;
+  max-width: 40vw;
+  margin: 1rem auto;
+  text-align: center;
+  padding: 2rem;
+}
+
+.products .cart-total p{
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  color: #555;
+  text-transform: capitalize;
+}
+
+.products .cart-total p span{
+  color: var(--green);
 }

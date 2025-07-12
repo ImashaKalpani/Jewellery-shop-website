@@ -44,10 +44,9 @@ if (isset($_POST['logout'])) {
             <div class="box-container">
                 <div class="title">
                     <img src="img/download.png" class="logo">
-                    <h1>My Order</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas eaque ipsum consectetur quos! Hic consequatur, reprehenderit necessitatibus laudantium esse impedit corporis!</p>
+                    <h1>Thank you for choosing Aurora Ceylon!</h1>
+                    <p>Each piece is crafted with love, care, and attention to detail. Please fill out the form below to place your order. Once received, we’ll get in touch to confirm availability, processing time, and delivery details. Because our jewellery is made to order, kindly allow a few extra days for crafting. We appreciate your patience and support for handmade artistry!</p>
                 </div>
-
                 <div class="box-container">
                     <?php
                     $select_orders = $conn->prepare("SELECT * FROM `orders` WHERE user_id = ? ORDER BY date DESC");
@@ -60,6 +59,7 @@ if (isset($_POST['logout'])) {
 
                             if ($select_product->rowCount() > 0) {
                                 $fetch_product = $select_product->fetch(PDO::FETCH_ASSOC);
+
                     ?>
                                 <div class="box" <?php if ($fetch_order['status'] == 'Canceled') echo 'style="border: 2px solid red;"'; ?>>
                                     <a href="view_order.php?get_id=<?= $fetch_order['id']; ?>">
@@ -91,9 +91,10 @@ if (isset($_POST['logout'])) {
                     ?>
                 </div>
             </div>
-        </section>
+    </div>
+    </section>
 
-        <?php include 'components/footer.php'; ?>
+    <?php include 'components/footer.php'; ?>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
