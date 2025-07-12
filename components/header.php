@@ -18,8 +18,13 @@
         </div>
 
         <div class="user-box">
-            <p>Username : <span><?php echo $_SESSION['user_name']; ?></span></p>
-            <p>Email : <span><?php echo $_SESSION['user_email']; ?></span></p>
+            <?php if (isset($_SESSION['user_name']) && isset($_SESSION['user_email'])): ?>
+                <p>Username : <span><?= $_SESSION['user_name']; ?></span></p>
+                <p>Email : <span><?= $_SESSION['user_email']; ?></span></p>
+            <?php else: ?>
+                <p>Please log in to view your profile.</p>
+            <?php endif; ?>
+
             <a href="login.php" class="btn">Login</a>
             <a href="register.php" class="btn">Register</a>
 
