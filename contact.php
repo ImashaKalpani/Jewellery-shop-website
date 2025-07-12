@@ -127,7 +127,7 @@
                     <i class="bx bxs-map-pin"></i>
                         <div>
                             <h4>address</h4>
-                            <P>123 Colombo, Sri Lanka</p>
+                            <P>No. 123, Colombo, Sri Lanka</p>
                         </div>
                 </div>
 
@@ -135,14 +135,14 @@
                     <i class="bx bxs-phone-call"></i>
                         <div>
                             <h4>Phone number</h4>
-                            <P>0751234567</p>
+                            <P>+94 75 123 4567</p>
                         </div>
                 </div>
                     <div class="box">
                     <i class="bx bxs-map-pin"></i>
                         <div>
                             <h4>email</h4>
-                            <P>jewellaryshop@gmail.com</p>
+                            <P>auroraceylon25@gmail.com</p>
                         </div>
                 </div>
             </div>
