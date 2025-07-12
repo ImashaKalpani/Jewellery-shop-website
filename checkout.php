@@ -110,7 +110,7 @@ if (isset($_POST['place_order'])) {
 
         <section class="checkout">
             <div class="title">
-                <img src="img/download.png" class="logo">
+                 <img src="img/download1.png" class="logo" style="width: 100px; height: auto;">
                 <h1>Checkout Summary</h1>
                 <p>Fill in the following details to proceed with checkout.</p>
             </div>
