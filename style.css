@@ -888,7 +888,7 @@ footer .bottom-footer {
   padding-bottom: 1rem;
 }
 
-/*.......view products..........*/
+/*.......view product..........*/
 
 .view_page {
   padding: 5% 8%;
@@ -905,7 +905,9 @@ footer .bottom-footer {
   padding: 1.5rem;
 }
 .view_page form img {
-  padding: 5rem;
+  height: 400px;
+  width: 400px;
+  border-radius: 20%;
   box-shadow: var(----box-shadow);
 }
 .view_page form .name {
@@ -916,16 +918,18 @@ footer .bottom-footer {
 .view_page form .price {
   font-size: 24px;
   line-height: 1;
+  color: red;
 }
 .view_page form .detail {
-  font-size: 16px;
-  color: gray;
+  font-size: 18px;
+  color: #000;
   line-height: 2;
   margin-bottom: 0.5rem;
 }
 .view_page .btn {
   background: var(--light-green);
   cursor: pointer;
+  margin-top: 1rem;
 }
 .cart-total .button {
   display: flex;
