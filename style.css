@@ -236,7 +236,8 @@ header.scrolled {
   background: #fff;
   box-shadow: var(--box-shadow);
   padding: 1rem;
-  width: 20rem;
+  width: 18rem;
+  text-align: center;
   line-height: 2;
   z-index: 200;
   transform: scale(0);
@@ -482,9 +483,6 @@ textarea {
   color: #fff;
   border-color: var(--green);
 }
-
-
-
 
 .left-arrow,
 .right-arrow {
@@ -890,7 +888,7 @@ footer .bottom-footer {
   padding-bottom: 1rem;
 }
 
-/*.......view products..........*/
+/*.......view product..........*/
 
 .view_page {
   padding: 5% 8%;
@@ -907,7 +905,9 @@ footer .bottom-footer {
   padding: 1.5rem;
 }
 .view_page form img {
-  padding: 5rem;
+  height: 400px;
+  width: 400px;
+  border-radius: 20%;
   box-shadow: var(----box-shadow);
 }
 .view_page form .name {
@@ -918,16 +918,18 @@ footer .bottom-footer {
 .view_page form .price {
   font-size: 24px;
   line-height: 1;
+  color: red;
 }
 .view_page form .detail {
-  font-size: 16px;
-  color: gray;
+  font-size: 18px;
+  color: #000;
   line-height: 2;
   margin-bottom: 0.5rem;
 }
 .view_page .btn {
   background: var(--light-green);
   cursor: pointer;
+  margin-top: 1rem;
 }
 .cart-total .button {
   display: flex;
@@ -937,7 +939,80 @@ footer .bottom-footer {
 .cart-total .button .btn {
   margin: 1rem;
 }
-/*.........view order section...........*/
+
+
+
+/*----------view order product---------------*/
+
+.orders .box-container{
+  padding: 2% 6%;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+ align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.orders .box-container .box{
+  box-shadow: var(--box-shadow);
+  border-radius: .5rem;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.orders .box-container .box a{
+  display: flex;
+  align-items: center;
+}
+
+.orders .box-container .box a .row{
+  position: absolute;
+  right: 1%;
+}
+
+.orders .box-container .box .date{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: .5rem 1.5rem;
+  background: var(--light-green);
+  font-size: .6rem;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  border-radius: .5rem;
+}
+
+.orders .box-container .box .image{
+  height: 20rem;
+  width: 100%;
+  object-fit: contain;
+  margin-left: 0;
+}
+
+.orders .box-container .box .name{ 
+  font-size: 1rem;
+  text-transform: capitalize;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  color: #000;
+}
+
+.orders .box-container .box .price{
+  color: orange;
+  font-size: 1rem;
+}
+
+.orders .box-container .box .status{
+  margin-left: .5rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.orders .box-container .box:hover{
+  box-shadow: var(--box-shadow);
+}
+
+
+/*.........view my order section...........*/
 .order-detail .box-container{
   box-shadow: var(----box-shadow);
   border-radius: .5rem;
@@ -1021,6 +1096,7 @@ footer .bottom-footer {
   border: 1px solid var(--green);
 }
 
+
 /*.........media screen........*/
 
 @media (max-width: 991px) {
@@ -1102,6 +1178,13 @@ footer .bottom-footer {
   justify-content: center;
   align-items: center;
 }
+
+.about .row img{
+  width: 500px;
+  height: 350px;
+  border-radius: 20%;
+  margin-bottom: 3rem;
+}
 .about .row .detail{
   width: 50%;
   margin: 1rem;
@@ -1117,8 +1200,13 @@ footer .bottom-footer {
 .about .row .detail h1{
   text-align: center;
   margin: 1rem 0;
-
 }
+
+.services .title img{
+  height: 100px;
+  width:100px;
+}
+
 .testimonial-container{
   padding: 6% 0;
   background-image: url(img/bg.jpg);
@@ -1139,6 +1227,11 @@ footer .bottom-footer {
   padding: 1rem;
   transform-style: preserve-3d;
   animation: slide .4s linear;
+}
+
+.testimonial-container .title img{
+  height: 100px;
+  width: 100px;
 }
 
 @keyframes slide{
@@ -1166,6 +1259,8 @@ padding-bottom: .5rem;
 text-transform: capitalize;
 }
 .testimonial-container .container .testimonial-item img{
+  height: 250px;
+  width: 220px;
   padding: 1rem 0;
   border-radius: 50%;
 }
@@ -1194,6 +1289,8 @@ text-transform: capitalize;
 .testimonial-container .container .left-arrow{
   left: 3rem;
 }
+
+
 /* ..................checkout section.....................*/
 
 .checkout .row {
@@ -1299,7 +1396,7 @@ text-transform: capitalize;
 }
 
 
-/* View Products */
+/* View Products section */
 
 .products {
   padding: 2rem;
@@ -1307,9 +1404,20 @@ text-transform: capitalize;
 
 .products .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   margin: 2rem 0;
+}
+
+.products .box-container1 .title h1{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.products .box-container1 .title img{
+  height: 100px;
+  width: 100px;
 }
 
 .products .box {
@@ -1388,4 +1496,54 @@ text-transform: capitalize;
 .products .btn {
   margin-top: 1rem;
   width: 100%;
+}
+
+.products .box-container .box .flex .fa-edit{
+  border-radius: .5rem;
+  font-size: 1.7rem;
+  color: #fff;
+  height: 2rem;
+  width: 3rem;
+  cursor: pointer;
+  background: var(--green);
+  margin-left: .5rem;
+}
+
+.products .box-container .box .flex .fa-edit:hover{
+  background: var(--light-green);
+  color: #000;
+}
+
+.products .box-container .box .sub-total{
+  padding-bottom: 1rem;
+  font-size: 1.7rem;
+  color: gray;
+}
+
+.products .box-container .box .sub-total span{
+  color: red;
+}
+
+.products .box-container .box button{
+  align-items: center;
+}
+
+.products .cart-total{
+  box-shadow: var(----box-shadow);
+  border-radius: .5rem;
+  max-width: 40vw;
+  margin: 1rem auto;
+  text-align: center;
+  padding: 2rem;
+}
+
+.products .cart-total p{
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  color: #555;
+  text-transform: capitalize;
+}
+
+.products .cart-total p span{
+  color: var(--green);
 }

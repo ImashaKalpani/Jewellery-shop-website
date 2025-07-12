@@ -129,7 +129,7 @@ if(isset($_POST['empty_cart'])){
             <?php
                 if ($grand_total !=0){
             ?>
-             <div class="cart-total">
+             <div class="cart-total">                
                 <p>Total amount payable : <span>$ <?= $grand_total; ?>/-</span></p>
                 <div class="button">
                     <form method="post">

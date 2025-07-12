@@ -91,48 +91,42 @@ if (isset($_POST['add_to_cart'])) {
         </div>
         <section class="view_page">
             <?php
-                if (isset($_GET['pid'])){
-                    $pid = $_GET['pid'];
-                    $select_products = $conn->prepare("SELECT * FROM 'products' WHERE id = '$pid'");
-                    $select_products->execute();
-                    if ($select_products -> rowCount()>0) {
-                        while($fetch_products = $select_products->fetch(PDO::FETCH_ASSOC)){
+            if (isset($_GET['pid'])) {
+                $pid = $_GET['pid'];
+                $select_products = $conn->prepare("SELECT * FROM `products` WHERE id = '$pid'");
+                $select_products->execute();
+                if ($select_products->rowCount() > 0) {
+                    while ($fetch_products = $select_products->fetch(PDO::FETCH_ASSOC)) {
 
-                   ?>
+            ?>
                         <form method="post">
-                            <img src="image/ <?php echo $fetch_products['image']; ?>">
+                            <img src="image/<?php echo $fetch_products['image']; ?>">
                             <div class="detail">
-                                <div class="price">Rs.<?php echo $fetch_products['price']; ?>/-</div>
                                 <div class="name"><?php echo $fetch_products['name']; ?></div>
+                                <div class="price">Rs.<?php echo $fetch_products['price']; ?>/-</div>
                                 <div class="detail">
-                                    <p>
-                                        bla blaa blaaaaaaaaaaaaaaaaaa
-                                        blaa blaaa blaaa blaaaaaaaaaaaaaaaaaa
-                                        wdkikqodqsp kejfqneivhqpdmca
-                                        fqijfwohfp  qwochqncqlhflkanscvjq
-                                    </p>
-
+                                    <p><?php echo $fetch_products['product_detail']; ?></p>
                                 </div>
                                 <input type="hidden" name="product_id" value="<?php echo $fetch_products['id']; ?>">
                                 <div class="button">
-                                    <button type="submit"name="add_to_wishlist" class="btn">add to wishlist<i class="bx bx-heart"></i></button>
+                                    <button type="submit" name="add_to_wishlist" class="btn">add to wishlist<i class="bx bx-heart"></i></button>
                                     <input type="hidden" name="qty" value="1" min="0" class="quantity">
                                     <button type="submit" name="add_to_cart" class="btn">add to cart<i class="bx bx-cart">
-                        </i></button>
+                                        </i></button>
                                 </div>
                             </div>
                         </form>
-                    <?php
-
-                        }
+            <?php
 
                     }
                 }
+            }
             ?>
-            
+
         </section>
+        <?php include 'components/footer.php'; ?>
     </div>
-    <?php include 'components/footer.php'; ?>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <script src="script.js"></script>
     <?php include 'components/alert.php'; ?>

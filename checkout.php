@@ -32,9 +32,8 @@ if (isset($_POST['place_order'])) {
 
         if ($get_product->rowCount() > 0) {
             while ($fetch_p = $get_product->fetch(PDO::FETCH_ASSOC)) {
-                $insert_order = $conn->prepare("INSERT INTO `orders`(id, user_id, name, number, email, address, address_type, method, product_id, price, qty) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+                $insert_order = $conn->prepare("INSERT INTO `orders`(user_id, name, number, email, address, address_type, method, product_id, price, qty) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
                 $insert_order->execute([
-                    unique_id(),
                     $user_id,
                     $name,
                     $number,
@@ -50,13 +49,12 @@ if (isset($_POST['place_order'])) {
                 exit;
             }
         } else {
-            $warning_msg[] = 'Something went wrong.';
+            $warning_msg[] = 'Product not found.';
         }
     } elseif ($verify_cart->rowCount() > 0) {
         while ($f_cart = $verify_cart->fetch(PDO::FETCH_ASSOC)) {
-            $insert_order = $conn->prepare("INSERT INTO `orders`(id, user_id, name, number, email, address, address_type, method, product_id, price, qty) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+            $insert_order = $conn->prepare("INSERT INTO `orders`(user_id, name, number, email, address, address_type, method, product_id, price, qty) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
             $insert_order->execute([
-                unique_id(),
                 $user_id,
                 $name,
                 $number,
@@ -70,14 +68,12 @@ if (isset($_POST['place_order'])) {
             ]);
         }
 
-        if ($insert_order) {
-            $delete_cart_id = $conn->prepare("DELETE FROM `cart` WHERE user_id = ?");
-            $delete_cart_id->execute([$user_id]);
-            header('location: order.php');
-            exit;
-        }
+        $delete_cart_id = $conn->prepare("DELETE FROM `cart` WHERE user_id = ?");
+        $delete_cart_id->execute([$user_id]);
+        header('location: order.php');
+        exit;
     } else {
-        $warning_msg[] = 'Something went wrong.';
+        $warning_msg[] = 'Your cart is empty or something went wrong.';
     }
 }
 ?>
@@ -110,7 +106,7 @@ if (isset($_POST['place_order'])) {
 
         <section class="checkout">
             <div class="title">
-                 <img src="img/download1.png" class="logo" style="width: 100px; height: auto;">
+                <img src="img/download1.png" class="logo" style="width: 100px; height: auto;">
                 <h1>Checkout Summary</h1>
                 <p>Fill in the following details to proceed with checkout.</p>
             </div>
@@ -213,7 +209,7 @@ if (isset($_POST['place_order'])) {
                                         <img src="image/<?= $fetch_product['image']; ?>">
                                         <div>
                                             <h3 class="name"><?= $fetch_product['name']; ?></h3>
-                                            <p class="price">$<?= $fetch_product['price']; ?> x <?= $fetch_cart['qty']; ?></p>
+                                            <p class="price">Rs.<?= $fetch_product['price']; ?> x <?= $fetch_cart['qty']; ?></p>
                                         </div>
                                     </div>
                         <?php
@@ -228,10 +224,9 @@ if (isset($_POST['place_order'])) {
                 </div>
             </div>
         </section>
+
         <?php include 'components/footer.php'; ?>
     </div>
-
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <script src="script.js"></script>

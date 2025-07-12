@@ -196,7 +196,7 @@ if (isset($_POST['logout'])) {
             </div>
             <div class="box-container">
                 <div class="box">
-                    <img src="img/home_necklace.jpeg">
+                    <img src="img/home_necklace3.png">
                     <a href="view_products.php" class="btn">Shop Now</a>
                 </div>
                 <div class="box">
