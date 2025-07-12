@@ -32,7 +32,7 @@ if (isset($_POST['place_order'])) {
 
         if ($get_product->rowCount() > 0) {
             while ($fetch_p = $get_product->fetch(PDO::FETCH_ASSOC)) {
-                $insert_order = $conn->prepare("INSERT INTO `orders`(user_id, name, number, email, address, address_type, method, product_id, price, qty) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+                $insert_order = $conn->prepare("INSERT INTO `orders`(user_id, name, number, email, address, address_type, method, product_id, price, qty, date, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
                 $insert_order->execute([
                     $user_id,
                     $name,
@@ -43,8 +43,11 @@ if (isset($_POST['place_order'])) {
                     $method,
                     $fetch_p['id'],
                     $fetch_p['price'],
-                    1
+                    1,
+                    date('2025-07-12'),
+                    'pending'
                 ]);
+
                 header('location: order.php');
                 exit;
             }
@@ -53,7 +56,7 @@ if (isset($_POST['place_order'])) {
         }
     } elseif ($verify_cart->rowCount() > 0) {
         while ($f_cart = $verify_cart->fetch(PDO::FETCH_ASSOC)) {
-            $insert_order = $conn->prepare("INSERT INTO `orders`(user_id, name, number, email, address, address_type, method, product_id, price, qty) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+            $insert_order = $conn->prepare("INSERT INTO `orders`(user_id, name, number, email, address, address_type, method, product_id, price, qty, date, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
             $insert_order->execute([
                 $user_id,
                 $name,
@@ -64,7 +67,9 @@ if (isset($_POST['place_order'])) {
                 $method,
                 $f_cart['product_id'],
                 $f_cart['price'],
-                $f_cart['qty']
+                $f_cart['qty'],
+                date('2025-07-12'),
+                'pending'
             ]);
         }
 
