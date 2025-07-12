@@ -236,7 +236,8 @@ header.scrolled {
   background: #fff;
   box-shadow: var(--box-shadow);
   padding: 1rem;
-  width: 20rem;
+  width: 18rem;
+  text-align: center;
   line-height: 2;
   z-index: 200;
   transform: scale(0);

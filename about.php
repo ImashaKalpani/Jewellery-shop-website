@@ -118,43 +118,29 @@ include 'components/connection.php';
             <div class="title">
                 <img src="img/download1.png" class="logo">
                 <h1>what people say about us </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium
-                    dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat,
-                    quidem fugiat illum? Quisquam, impedit consequatur.</p>
+                <p>At Aurora Ceylon, we take pride in crafting jewellery that speaks to the heart — and nothing makes us happier than hearing from our valued customers. From the quality of our handmade pieces to the warmth of our showroom and the ease of our online shopping experience, your kind words continue to inspire us. Here’s what some of our lovely customers have shared.</p>
 
             </div>
             <div class="container">
                 <div class="testimonial-item active">
                     <img src="img/lady1.png">
                     <h1>Nethra Perera</h1>
-                    <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit,sed do eiusmod
-                        tempor incidiunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip exea commodo consequat.
-                    </p>
+                    <p>The craftsmanship is beautiful — you can tell each piece is made with love. I ordered a necklace online and it was even better in person. Packaging was lovely too!</p>
                 </div>
                 <div class="testimonial-item">
                     <img src="img/man1.png">
                     <h1>Hemal Sebastian</h1>
-                    <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit,sed do eiusmod
-                        tempor incidiunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip exea commodo consequat.
-                    </p>
+                    <p>I visited the Aurora Ceylon showroom last weekend — such a warm and elegant atmosphere. The staff were friendly and helped me choose the perfect gift. Will definitely return!</p>
                 </div>
                 <div class="testimonial-item">
                     <img src="img/lady2.png">
                     <h1>Sashika Godaudage</h1>
-                    <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit,sed do eiusmod
-                        tempor incidiunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip exea commodo consequat.
-                    </p>
+                    <p>Your website is easy to navigate, and checkout was simple. I appreciate how transparent everything is — from product details to delivery updates. Great job!</p>
                 </div>
                 <div class="testimonial-item">
                     <img src="img/man2.png">
                     <h1>Nadun Dias</h1>
-                    <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit,sed do eiusmod
-                        tempor incidiunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip exea commodo consequat.
-                    </p>
+                    <p>My earrings arrived safely and they’re exquisite! I had a quick question after ordering and your team responded right away. So impressed by the attention to detail.</p>
                 </div>
                 <div class="left-arrow" onclick="nextSlide()"><i class="bx bxs-left-arrow-alt"></i> </div>
                 <div class="right-arrow" onclick="prevSlide()"><i class="bx bxs-right-arrow-alt"></i> </div>
