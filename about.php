@@ -102,7 +102,7 @@ include 'components/connection.php';
         <div class ="about">
             <div class="row">
                 <div class="img-box">
-                <img src ="img/3.png">
+                <img src ="img/c.jpg">
             </div>
             <div class="detail">
     <h1>Visit our beautiful showroom</h1>
