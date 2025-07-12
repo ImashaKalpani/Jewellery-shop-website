@@ -26,36 +26,36 @@ include 'components/connection.php';
         </div>
         <div class="about-category">
             <div class="box">
-                <img src="img/3.webp">
+                <img src="img/home7.jpg">
                 <div class="detail">
-                    <span>coffee</span>
-                    <h1>lemon green</h1>
+                    <span>HANDMADE RINGS</span>
+                    <h1>Timeless Beauty</h1>
                     <a href="view_products.php" class="btn"> shop now</a>
                 </div>
             </div>
             <div class="box">
-                <img src="img/about.webp">
+                <img src="img/home6.jpg">
                 <div class="detail">
-                    <span>coffee</span>
-                    <h1>lemon Teaname</h1>
-                    <a href="view_products.php" class="btn"> shop now</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="img/2.webp">
-                <div class="detail">
-                    <span>coffee</span>
-                    <h1>lemon Teaname</h1>
+                    <span>BEADED NECKLACES</span>
+                    <h1>Nature’s Charm</h1>
                     <a href="view_products.php" class="btn"> shop now</a>
                 </div>
             </div>
 
-            <div class="box">
-                <img src="img/1.webp">
+            <div class="box" style="height: 300px; overflow: hidden;">
+                <img src="img/home2.jpg" style="height: 100%; object-fit: cover;">
                 <div class="detail">
-                    <span>coffee</span>
-                    <h1>lemon green</h1>
+                    <span>PEARL RINGS</span>
+                    <h1>Elegant Touch</h1>
+                    <a href="view_products.php" class="btn"> shop now</a>
+                </div>
+            </div>
+
+            <div class="box" style="height: 300px; overflow: hidden;">
+                  <img src="img/home1.jpg" style="height: 100%; object-fit: cover;">
+                <div class="detail">
+                    <span>BRACELET SETS</span>
+                    <h1>Grace in Gold</h1>
                     <a href="view_products.php" class="btn"> shop now</a>
                 </div>
             </div>
@@ -67,7 +67,7 @@ include 'components/connection.php';
             <div class="title">
                 <img src="img/download1.png" class="logo">
                 <h1>why choose us</h1>
-                <p>lorem ishdfgssmhjsg ,sdhfg,shf shd,hfdhgf ,shfh,sdf ,fdhbghhh</p>
+                <p>Crafted for Those Who Expect More.</p>
 
             </div>
             <div class="box-container">
