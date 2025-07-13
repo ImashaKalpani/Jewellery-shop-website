@@ -1,8 +1,9 @@
 <?php
 include 'connection.php'; // Adjust path if needed
             if (session_status() === PHP_SESSION_NONE) {
-                session_start();
+                
             }
+           
 
 
             $user_id = $_SESSION['user_id'] ?? '';
