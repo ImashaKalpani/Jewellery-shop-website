@@ -65,7 +65,7 @@
             </div>
         </div>
         <div class="bottom-footer">
-            <p>All right reserved</p>
+            
         </div>
     </div>
 </footer>
