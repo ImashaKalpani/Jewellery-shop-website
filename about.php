@@ -54,7 +54,7 @@ include 'components/connection.php';
             <div class="box" style="height: 300px; overflow: hidden;">
                   <img src="img/home4.jpg" style="height: 100%; object-fit: cover;">
                 <div class="detail">
-                    <span>BRACELET SETS</span>
+                    <span>NECKLACES SETS</span>
                     <h1>Grace in Gold</h1>
                     <a href="view_products.php" class="btn"> shop now</a>
                 </div>

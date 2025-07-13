@@ -140,25 +140,25 @@ if (isset($_POST['logout'])) {
         <section class="thumb">
             <div class="box-container">
                 <div class="box">
-                    <img src="img/thumb2.jpg">
+                    <img src="img/bangle.png" alt="Logo" style="width: 150px; height: auto;">
                     <h1>Bangles</h1>
                     <p>Our handmade bangles are more than accessories — they’re wearable art. Crafted with love using natural materials like jute, clay, beads, and metal accents, each bangle carries a rustic charm that complements any look. Whether you prefer a single bold piece or a stack of thin bangles, our collection offers a variety of textures and tones inspired by nature. Celebrate your individuality with bangles that are as unique as you are.</p>
                     <i class="bx bx-chevron-right"></i>
                 </div>
                 <div class="box">
-                    <img src="img/thumb0.jpg">
+                    <img src="img/ring.png" alt="Logo" style="width: 150px; height: auto;">
                     <h1>Rings</h1>
                     <p>Every ring in our collection is designed to tell a story — of craftsmanship, tradition, and elegance. We use earthy elements like polished stones, colorful beads, and braided cords to create rings that feel personal and meaningful. Each piece is handmade with care, making it a special addition to your daily wear or gift to someone close. Whether you're drawn to minimal designs or something more detailed, you'll find a ring here that fits your spirit.</p>
                     <i class="bx bx-chevron-right"></i>
                 </div>
                 <div class="box">
-                    <img src="img/thumb1.jpg">
+                   <img src="img/necklace.png" alt="Logo" style="width: 150px; height: auto;">
                     <h1>Pendants</h1>
                     <p>Our pendants are the heart of our handmade jewellery line, designed to keep your favorite stories close. Each pendant features a thoughtful combination of textures — from wood and reflects a blend of culture and creativity. Perfect for everyday wear or as a standout piece, these pendants are lightweight, meaningful, and beautifully unique. Let your necklace speak for you with designs inspired by nature, emotions, and tradition.</p>
                     <i class="bx bx-chevron-right"></i>
                 </div>
                 <div class="box">
-                    <img src="img/thumb.jpg">
+                   <img src="img/bangle.png" alt="Logo" style="width: 150px; height: auto;">
                     <h1>Ear Studs</h1>
                     <p>Delicate yet full of character, our ear studs bring a handmade charm to even the simplest outfits. Designed with natural tones and vibrant accents, they’re ideal for those who love small details that stand out. We use quality materials like polymer clay, turquoise beads, and brass backs to ensure comfort and durability. Whether you're dressing up or keeping it casual, these studs are made to reflect your personality in the most elegant way.</p>
                     <i class="bx bx-chevron-right"></i>
