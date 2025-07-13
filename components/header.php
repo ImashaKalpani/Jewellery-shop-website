@@ -30,7 +30,7 @@ if (!empty($user_id)) {
 <header class="header">
     <div class="flex">
         <a href="home.php" class="logo">
-            <img src="img/logo.jpg" alt="Logo">
+            <img src="img/logo.png" alt="Logo" style="width: 100px; height: auto;">
         </a>
 
         <nav class="navbar">
