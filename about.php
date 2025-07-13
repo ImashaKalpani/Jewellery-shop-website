@@ -22,7 +22,7 @@ include 'components/connection.php';
             <h1> about us</h1>
         </div>
         <div class="title2">
-            <a href="home.php">home</a><span>about</span>
+            <a href="home.php">home</a><span>/ about</span>
         </div>
         <div class="about-category">
             <div class="box">
@@ -52,7 +52,7 @@ include 'components/connection.php';
             </div>
 
             <div class="box" style="height: 300px; overflow: hidden;">
-                  <img src="img/home1.jpg" style="height: 100%; object-fit: cover;">
+                  <img src="img/home4.jpg" style="height: 100%; object-fit: cover;">
                 <div class="detail">
                     <span>BRACELET SETS</span>
                     <h1>Grace in Gold</h1>
