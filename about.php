@@ -2,72 +2,74 @@
 
 include 'components/connection.php';
 ?>
-<style       type="text/css">
-             <?php include 'style.css'; ?>
+<style type="text/css">
+    <?php include 'style.css'; ?>
 </style>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jewellery Shop - about us page</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
     <?php include 'components/header.php'; ?>
     <div class="main">
-           <div class="banner">
+        <div class="banner">
             <h1> about us</h1>
-</div>
-<div class ="title2">
-    <a href = "home.php">home</a><span>about</span>
-</div>
-<div class ="about-category">
-    <div class="box">
-        <img src="img/3.webp">
-        <div class="detail">
-            <span>coffee</span>
-            <h1>lemon green</h1>
-            <a href="view_products.php" class="btn"> shop now</a>
         </div>
-    </div>
-    <div class="box">
-        <img src="img/about.webp">
-        <div class="detail">
-            <span>coffee</span>
-            <h1>lemon Teaname</h1>
-            <a href="view_products.php" class="btn"> shop now</a>
+        <div class="title2">
+            <a href="home.php">home</a><span>/ about</span>
         </div>
-    </div>
-     
-     <div class="box">
-        <img src="img/2.webp">
-        <div class="detail">
-            <span>coffee</span>
-            <h1>lemon Teaname</h1>
-            <a href="view_products.php" class="btn"> shop now</a>
-        </div>
-    </div>
-     
-<div class="box">
-        <img src="img/1.webp">
-        <div class="detail">
-            <span>coffee</span>
-            <h1>lemon green</h1>
-            <a href="view_products.php" class="btn"> shop now</a>
-        </div>
-    </div>
-     
-     
-</div>
-        
-<section class="services">
-    <div class="title">
-        <img src="img/download.png" class= "logo">
-        <h1>why choose us</h1>
-        <p>lorem ishdfgssmhjsg ,sdhfg,shf shd,hfdhgf ,shfh,sdf ,fdhbghhh</p>
+        <div class="about-category">
+            <div class="box">
+                <img src="img/home7.jpg">
+                <div class="detail">
+                    <span>HANDMADE RINGS</span>
+                    <h1>Timeless Beauty</h1>
+                    <a href="view_products.php" class="btn"> shop now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/home6.jpg">
+                <div class="detail">
+                    <span>BEADED NECKLACES</span>
+                    <h1>Nature’s Charm</h1>
+                    <a href="view_products.php" class="btn"> shop now</a>
+                </div>
+            </div>
 
-    </div>
+            <div class="box" style="height: 300px; overflow: hidden;">
+                <img src="img/home2.jpg" style="height: 100%; object-fit: cover;">
+                <div class="detail">
+                    <span>PEARL RINGS</span>
+                    <h1>Elegant Touch</h1>
+                    <a href="view_products.php" class="btn"> shop now</a>
+                </div>
+            </div>
+
+            <div class="box" style="height: 300px; overflow: hidden;">
+                  <img src="img/home4.jpg" style="height: 100%; object-fit: cover;">
+                <div class="detail">
+                    <span>NECKLACES SETS</span>
+                    <h1>Grace in Gold</h1>
+                    <a href="view_products.php" class="btn"> shop now</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <section class="services">
+            <div class="title">
+                <img src="img/download1.png" class="logo">
+                <h1>why choose us</h1>
+                <p>Crafted for Those Who Expect More.</p>
+
+            </div>
             <div class="box-container">
                 <div class="box">
                     <img src="img/icon2.png">
@@ -99,63 +101,53 @@ include 'components/connection.php';
                 </div>
             </div>
         </section>
-        <div class ="about">
+        <div class="about">
             <div class="row">
                 <div class="img-box">
-                <img src ="img/3.png">
-            </div>
-            <div class="detail">
-    <h1>Visit our beautiful showroom</h1>
-    <p>
-our showroom is an expression of what we love doing;being creative with floral and 
-plant arrangements.whether you are looking for a florist for your perfect wedding,
-or just want to uplift any room with some one of a kind living decor,Blossom 
-with love can help.</p>
-<a href="view_products.php" class ="btn">shop now</a>
+                    <img src="img/home1.jpg">
+                </div>
+                <div class="detail">
+                    <h1>Visit Our Showroom – Where Elegance Comes to Life</h1>
+                    <p>We warmly invite you to visit our Aurora Ceylon showroom and experience the elegance of our handmade jewellery up close. Discover the beauty, craftsmanship, and stories behind each piece in person. Whether you're looking for something special or simply wish to explore, our team is here to welcome you with a smile. Come feel the sparkle!</p>
+                    <a href="view_products.php" class="btn">shop now</a>
 
-</div>
-</div>
- </div>
- <div class ="testimonial-container">
-    <div class="title">
-        <img src ="img/download.png" class="logo">
-        <h1>what people say about us </h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa modi distinctio accusantium 
-            dignissimos odio expedita itaque, nihil tenetur esse, doloremque minus dolores repellat,
-             quidem fugiat illum? Quisquam, impedit consequatur.</p>
-        
-</div>        
-             <div class ="container">
-             <div class="testimonial-item active">
-                <img src ="img/01.jpg">
-                <h1>sara smith</h1>
-                <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit,sed do eiusmod
-                    tempor incidiunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud 
-                    exercitation ullamco laboris nisi ut aliquip exea commodo consequat.
-                </p>
-               </div>
-                <div class="testimonial-item">
-                <img src ="img/02.jpg">
-                <h1>jone smith</h1>
-                <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit,sed do eiusmod
-                    tempor incidiunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud 
-                    exercitation ullamco laboris nisi ut aliquip exea commodo consequat.
-                </p>
+                </div>
+            </div>
         </div>
-             <div class="testimonial-item">
-                <img src ="img/03.jpg">
-                <h1>selena smith</h1>
-                <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit,sed do eiusmod
-                    tempor incidiunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud 
-                    exercitation ullamco laboris nisi ut aliquip exea commodo consequat.
-                </p>
+        <div class="testimonial-container">
+            <div class="title">
+                <img src="img/download1.png" class="logo">
+                <h1>what people say about us </h1>
+                <p>At Aurora Ceylon, we take pride in crafting jewellery that speaks to the heart — and nothing makes us happier than hearing from our valued customers. From the quality of our handmade pieces to the warmth of our showroom and the ease of our online shopping experience, your kind words continue to inspire us. Here’s what some of our lovely customers have shared.</p>
+
             </div>
-<div class="left-arrow" onclick="nextSlide()"><i class="bx bxs-left-arrow-alt"></i>  </div>
-<div class="right-arrow" onclick="prevSlide()"><i class="bx bxs-right-arrow-alt"></i>  </div>
+            <div class="container">
+                <div class="testimonial-item active">
+                    <img src="img/lady1.png">
+                    <h1>Nethra Perera</h1>
+                    <p>The craftsmanship is beautiful — you can tell each piece is made with love. I ordered a necklace online and it was even better in person. Packaging was lovely too!</p>
+                </div>
+                <div class="testimonial-item">
+                    <img src="img/man1.png">
+                    <h1>Hemal Sebastian</h1>
+                    <p>I visited the Aurora Ceylon showroom last weekend — such a warm and elegant atmosphere. The staff were friendly and helped me choose the perfect gift. Will definitely return!</p>
+                </div>
+                <div class="testimonial-item">
+                    <img src="img/lady2.png">
+                    <h1>Sashika Godaudage</h1>
+                    <p>Your website is easy to navigate, and checkout was simple. I appreciate how transparent everything is — from product details to delivery updates. Great job!</p>
+                </div>
+                <div class="testimonial-item">
+                    <img src="img/man2.png">
+                    <h1>Nadun Dias</h1>
+                    <p>My earrings arrived safely and they’re exquisite! I had a quick question after ordering and your team responded right away. So impressed by the attention to detail.</p>
+                </div>
+                <div class="left-arrow" onclick="nextSlide()"><i class="bx bxs-left-arrow-alt"></i> </div>
+                <div class="right-arrow" onclick="prevSlide()"><i class="bx bxs-right-arrow-alt"></i> </div>
             </div>
-       
-    </div>
-    <?php include 'components/footer.php'; ?>
+
+        </div>
+        <?php include 'components/footer.php'; ?>
     </div>
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>

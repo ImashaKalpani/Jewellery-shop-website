@@ -105,6 +105,7 @@ if (isset($_POST['cancle'])){
                             </div>
                                 <?php
                                 }
+                            
                             }else{
                                  echo '<p class="empty">product not found</p>';
                             }

@@ -9,7 +9,7 @@
     <div class="overlay"></div>
     <div class="footer-content">
         <div class="img-box">
-            <img src="img/logo2.png">
+             <img src="img/logo.png" alt="Logo" style="width: 150px; height: auto;">
         </div>
         <div class="inner-footer">
             <div class="card">
@@ -49,13 +49,13 @@
             </div>
 
             <div class="card">
-                <h3>Newsletter</h3>
+                <h3>Newslatter</h3>
                 <p>Sign Up For Newslatter</p>
                 <div class="social-links">
-                    <i class="bx bxl-instagram"></i>
-                    <i class="bx bxl-twitter"></i>
-                    <i class="bx bxl-youtube"></i>
-                    <i class="bx bxl-whatsapp"></i>
+                    <a href="https://www.instagram.com/"><i class="bx bxl-instagram"></i></a>
+                    <a href="https://x.com/?lang=en"><i class="bx bxl-twitter"></i></a>
+                    <a href="https://www.youtube.com/?feature=youtu.be"><i class="bx bxl-youtube"></i></a>
+                    <a href="https://www.whatsapp.com/"><i class="bx bxl-whatsapp"></i></a>
                 </div>
             </div>
 
@@ -65,7 +65,7 @@
             </div>
         </div>
         <div class="bottom-footer">
-            <p>All right reserved</p>
+            
         </div>
     </div>
 </footer>
