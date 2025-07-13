@@ -158,7 +158,7 @@ if (isset($_POST['logout'])) {
                     <i class="bx bx-chevron-right"></i>
                 </div>
                 <div class="box">
-                   <img src="img/bangle.png" alt="Logo" style="width: 150px; height: auto;">
+                   <img src="img/earrings.png" alt="Logo" style="width: 100px; height: auto;">
                     <h1>Ear Studs</h1>
                     <p>Delicate yet full of character, our ear studs bring a handmade charm to even the simplest outfits. Designed with natural tones and vibrant accents, they’re ideal for those who love small details that stand out. We use quality materials like polymer clay, turquoise beads, and brass backs to ensure comfort and durability. Whether you're dressing up or keeping it casual, these studs are made to reflect your personality in the most elegant way.</p>
                     <i class="bx bx-chevron-right"></i>
