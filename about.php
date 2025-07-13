@@ -142,8 +142,9 @@ include 'components/connection.php';
                     <h1>Nadun Dias</h1>
                     <p>My earrings arrived safely and they’re exquisite! I had a quick question after ordering and your team responded right away. So impressed by the attention to detail.</p>
                 </div>
-                <div class="left-arrow" onclick="nextSlide()"><i class="bx bxs-left-arrow-alt"></i> </div>
-                <div class="right-arrow" onclick="prevSlide()"><i class="bx bxs-right-arrow-alt"></i> </div>
+                <div class="left-arrow"><i class="bx bxs-left-arrow-alt"></i></div>
+                <div class="right-arrow"><i class="bx bxs-right-arrow-alt"></i></div>
+
             </div>
 
         </div>
