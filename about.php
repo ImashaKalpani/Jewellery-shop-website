@@ -52,7 +52,7 @@ include 'components/connection.php';
             </div>
 
             <div class="box" style="height: 300px; overflow: hidden;">
-                  <img src="img/home4.jpg" style="height: 100%; object-fit: cover;">
+                <img src="img/home4.jpg" style="height: 100%; object-fit: cover;">
                 <div class="detail">
                     <span>NECKLACES SETS</span>
                     <h1>Grace in Gold</h1>
@@ -152,7 +152,8 @@ include 'components/connection.php';
     </div>
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
-    <script src="http://localhost/GREEN-TEA-SHOP-WEBSITE/script.js"></script>
+    <script src="script.js"></script>
+
 
     <!-- Alert system -->
     <?php include 'components/alert.php'; ?>

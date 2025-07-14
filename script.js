@@ -73,7 +73,7 @@ window.addEventListener('DOMContentLoaded', function () {
 });
 
 /*.................testimonial slider...................*/
-let slides = document.querySelectorAll('.testimonial-item');
+/*let slides = document.querySelectorAll('.testimonial-item');
 let index = 0;
 
 function nextSlide() {
@@ -86,5 +86,42 @@ function prevSlide() {
     slides[index].classList.remove('active');
     index = (index - 1 + slides.length) % slides.length;
     slides[index].classList.add('active');
-}
+}*/
+
+// Wait until DOM is fully loaded
+window.addEventListener('DOMContentLoaded', () => {
+    // Select all testimonial items
+    const slides = document.querySelectorAll('.testimonial-item');
+    const leftArrow = document.querySelector('.left-arrow');
+    const rightArrow = document.querySelector('.right-arrow');
+    let index = 0;
+
+    // Function to show next slide
+    function nextSlide() {
+        slides[index].classList.remove('active');
+        index = (index + 1) % slides.length;
+        slides[index].classList.add('active');
+    }
+
+    // Function to show previous slide
+    function prevSlide() {
+        slides[index].classList.remove('active');
+        index = (index - 1 + slides.length) % slides.length;
+        slides[index].classList.add('active');
+    }
+
+    // Event listeners for arrow buttons
+    rightArrow.addEventListener('click', nextSlide);
+    leftArrow.addEventListener('click', prevSlide);
+
+    // Optional: Add keyboard support (Left/Right arrows)
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') nextSlide();
+        if (e.key === 'ArrowLeft') prevSlide();
+    });
+
+    // Optional: Autoplay every 6 seconds
+    // setInterval(nextSlide, 6000);
+});
+
 
