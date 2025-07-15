@@ -108,12 +108,24 @@ if (isset($_POST['add_to_cart'])) {
                                     <p><?php echo $fetch_products['product_detail']; ?></p>
                                 </div>
                                 <input type="hidden" name="product_id" value="<?php echo $fetch_products['id']; ?>">
-                                <div class="button">
+                                <!-- <div class="button">
                                     <button type="submit" name="add_to_wishlist" class="btn">add to wishlist<i class="bx bx-heart"></i></button>
                                     <input type="hidden" name="qty" value="1" min="0" class="quantity">
                                     <button type="submit" name="add_to_cart" class="btn">add to cart<i class="bx bx-cart">
                                         </i></button>
+                                </div> -->
+                                <div class="button">
+                                    <input type="hidden" name="qty" value="1" min="0" class="quantity">
+
+                                    <?php if (!empty($user_id)) { ?>
+                                        <button type="submit" name="add_to_wishlist" class="btn">add to wishlist <i class="bx bx-heart"></i></button>
+                                        <button type="submit" name="add_to_cart" class="btn">add to cart <i class="bx bx-cart"></i></button>
+                                    <?php } else { ?>
+                                        <button type="button" onclick="showLoginMessage()" class="btn">add to wishlist <i class="bx bx-heart"></i></button>
+                                        <button type="button" onclick="showLoginMessage()" class="btn">add to cart <i class="bx bx-cart"></i></button>
+                                    <?php } ?>
                                 </div>
+
                             </div>
                         </form>
             <?php
@@ -130,6 +142,25 @@ if (isset($_POST['add_to_cart'])) {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <script src="script.js"></script>
     <?php include 'components/alert.php'; ?>
+
+    <!-- Cart option not logged option -->
+    <script>
+        function showLoginMessage() {
+            swal({
+                title: "Login Required",
+                text: "Please login to add items to your cart or wishlist.",
+                icon: "warning",
+                buttons: ["Cancel", "Login"],
+                dangerMode: true,
+            }).then((willLogin) => {
+                if (willLogin) {
+                    window.location.href = 'login.php';
+                }
+            });
+        }
+    </script>
+
+
 </body>
 
 </html>

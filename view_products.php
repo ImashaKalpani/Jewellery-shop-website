@@ -98,9 +98,16 @@ if (isset($_POST['add_to_cart'])) {
                 if ($select_products->rowCount() > 0) {
                     while ($fetch_products = $select_products->fetch(PDO::FETCH_ASSOC)) {
                 ?>
+
+                        <!-- **********Dont remove this code********** -->
+                        <!--
                         <form action="" method="post" class="box">
                             <img src="image/<?php echo $fetch_products['image']; ?>" class="img">
-                            <div class="button">
+
+-->
+                        <!-- Original One -->
+
+                        <!-- <div class="button">
                                 <button type="submit" name="add_to_cart" class="bx bx-cart"></button>
                                 <button type="submit" name="add_to_wishlist" class="bx bx-heart"></button>
                                 <a href="view_page.php?pid=<?php echo $fetch_products['id']; ?>" class="bx bxs-show"></a>
@@ -110,9 +117,53 @@ if (isset($_POST['add_to_cart'])) {
                             <div class="fles">
                                 <p class="price">Rs.<?php echo $fetch_products['price']; ?></p>
                                 <input type="number" name="qty" required min="1" value="1" max="99" maxlength="2" class="qty">
-                            </div>
+                            </div> -->
+
+                        <!-- 2nd One -->
+
+                        <!-- <div class="button">
+                                <?php if (!empty($user_id)) { ?>
+                                    <button type="submit" name="add_to_cart" class="bx bx-cart" title="Add to Cart"></button>
+                                    <button type="submit" name="add_to_wishlist" class="bx bx-heart" title="Add to Wishlist"></button>
+                                <?php } else { ?>
+                                    <button type="button" class="bx bx-cart" title="Login required to add to cart" onclick="showLoginMessage()"></button>
+                                    <button type="button" class="bx bx-heart" title="Login required to add to wishlist" onclick="showLoginMessage()"></button>
+                                <?php } ?>
+                                <a href="view_page.php?pid=<?= $fetch_products['id']; ?>" class="bx bxs-show"></a>
+                            </div> -->
+
+
+                        <!--
                             <a href="checkout.php?get_id=<?php echo $fetch_products['id']; ?>" class="btn">buy now</a>
                         </form>
+                        -->
+                        <form action="" method="post" class="box">
+                            <img src="image/<?php echo $fetch_products['image']; ?>" class="img">
+
+                            <div class="button">
+                                <?php if (!empty($user_id)) { ?>
+                                    <button type="submit" name="add_to_cart" class="bx bx-cart" title="Add to Cart"></button>
+                                    <button type="submit" name="add_to_wishlist" class="bx bx-heart" title="Add to Wishlist"></button>
+                                <?php } else { ?>
+                                    <button type="button" class="bx bx-cart" title="Login required to add to cart" onclick="showLoginMessage()"></button>
+                                    <button type="button" class="bx bx-heart" title="Login required to add to wishlist" onclick="showLoginMessage()"></button>
+                                <?php } ?>
+                                <a href="view_page.php?pid=<?= $fetch_products['id']; ?>" class="bx bxs-show"></a>
+                            </div>
+
+                            <h3 class="name"><?php echo $fetch_products['name']; ?></h3>
+
+                            <!-- These must be inside the form always, even if user not logged in -->
+                            <input type="hidden" name="product_id" value="<?php echo $fetch_products['id']; ?>">
+
+                            <div class="fles">
+                                <p class="price">Rs.<?php echo $fetch_products['price']; ?></p>
+                                <input type="number" name="qty" required min="1" value="1" max="99" maxlength="2" class="qty">
+                            </div>
+
+                            <a href="checkout.php?get_id=<?php echo $fetch_products['id']; ?>" class="btn">Buy Now</a>
+                        </form>
+
                 <?php
                     }
                 } else {
@@ -127,6 +178,26 @@ if (isset($_POST['add_to_cart'])) {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <script src="script.js"></script>
     <?php include 'components/alert.php'; ?>
+
+    <!-- Cart option not logged option -->
+    <script>
+        function showLoginMessage() {
+            // Using SweetAlert (already included in your page)
+            swal({
+                title: "Login Required",
+                text: "Please login to add items to your cart or wishlist.",
+                icon: "warning",
+                buttons: ["Cancel", "Login"],
+                dangerMode: true,
+            }).then((willLogin) => {
+                if (willLogin) {
+                    window.location.href = 'login.php';
+                }
+            });
+        }
+    </script>
+
+
 </body>
 
 </html>
