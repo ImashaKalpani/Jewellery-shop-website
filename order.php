@@ -45,7 +45,7 @@ if (isset($_POST['logout'])) {
                 <div class="title">
                     <img src="img/download1.png" class="logo">
                     <h1>Thank you for choosing our handmade jewellery!</h1>
-                        <p>Each piece is crafted with love, care, and attention to detail. Please browse your past orders below. If you have any questions, feel free to contact us.</p>
+                    <p>Each piece is crafted with love, care, and attention to detail. Please browse your past orders below. If you have any questions, feel free to contact us.</p>
                 </div>
 
                 <div class="box-container">
@@ -69,7 +69,7 @@ if (isset($_POST['logout'])) {
                                     <img src="image/<?= $fetch_product['image']; ?>" class="image">
                                     <div class="row">
                                         <h3 class="name"><?= $fetch_product['name']; ?></h3>
-                                        <p class="price">Price: $<?= $fetch_order['price']; ?> x <?= $fetch_order['qty']; ?></p>
+                                        <p class="price">Price: Rs.<?= $fetch_order['price']; ?> x <?= $fetch_order['qty']; ?></p>
                                         <p class="status" style="color:
                                 <?php
                                 if ($fetch_order['status'] == 'delivered') {

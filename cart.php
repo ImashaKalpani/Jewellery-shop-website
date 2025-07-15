@@ -107,11 +107,11 @@ if (isset($_POST['empty_cart'])) {
                                 <img src="image/<?= $fetch_products['image']; ?>" class="img">
                                 <h3 class="name"><?= $fetch_products['name']; ?></h3>
                                 <div class="flex">
-                                    <p class="price">Price: $<?= $fetch_products['price']; ?>/-</p>
+                                    <p class="price">Price: Rs.<?= $fetch_products['price']; ?>/-</p>
                                     <input type="number" name="qty" required min="1" value="<?= $fetch_cart['qty']; ?>" max="99" maxlength="2" class="qty">
                                     <button type="submit" name="update_cart" class="bx bxs-edit fa-edit"></button>
                                 </div>
-                                <p class="sub-total">Sub Total : <span>$<?= $sub_total = ($fetch_cart['qty'] * $fetch_cart['price']) ?></span></p>
+                                <p class="sub-total">Sub Total : <span>Rs.<?= $sub_total = ($fetch_cart['qty'] * $fetch_cart['price']) ?></span></p>
 
                                 <button type="submit" name="delete_item" class="btn" onclick="return confirm('Delete this item')">Delete</button>
                             </form>
@@ -130,7 +130,7 @@ if (isset($_POST['empty_cart'])) {
             if ($grand_total != 0) {
             ?>
                 <div class="cart-total">
-                    <p>Total amount payable : <span>$ <?= $grand_total; ?>/-</span></p>
+                    <p>Total amount payable : <span>Rs. <?= $grand_total; ?>/-</span></p>
                     <div class="button">
                         <form method="post">
                             <button type="submit" name="empty_cart" class="btn" onclick="return confirm('Are you sure to empty your cart?')">Empty cart</button>
