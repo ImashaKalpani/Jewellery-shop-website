@@ -62,7 +62,7 @@ if (isset($_POST['logout'])) {
                 <!-- Slide 2 -->
                 <div class="slider__slider slide2">
                     <video autoplay muted loop playsinline class="background-video">
-                        <source src="img/video1.mp4" type="video/mp4">
+                        <source src="img/video4.mp4" type="video/mp4">
                     </video>
                     <div class="overlay"></div>
                     <div class="slide-detail">
@@ -96,7 +96,7 @@ if (isset($_POST['logout'])) {
                 <!-- Slide 4 -->
                 <div class="slider__slider slide4">
                     <video autoplay muted loop playsinline class="background-video">
-                        <source src="img/video1.mp4" type="video/mp4">
+                        <source src="img/video4.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <div class="overlay"></div>
