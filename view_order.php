@@ -84,7 +84,7 @@ if (isset($_POST['cancel'])) {
                                         <img src="img/<?= $fetch_product['image']; ?>" class="image">
                                         <p class="price"><?= $fetch_product['price']; ?> x <?= $fetch_order['qty']; ?></p>
                                         <h3 class="name"><?= $fetch_product['name']; ?></h3>
-                                        <p class="grand_total">Total amount payable: <span>$<?= $grand_total; ?></span></p>
+                                        <p class="grand_total">Total amount payable: <span>Rs.<?= $grand_total; ?></span></p>
                                     </div>
                                     <div class="col">
                                         <p class="title">Billing Address</p>

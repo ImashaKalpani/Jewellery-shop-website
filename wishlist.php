@@ -115,7 +115,7 @@ if (isset($_POST['delete_item'])) {
 
                                 <h3 class="name"><?= $fetch_products['name']; ?></h3>
                                 <div class="flex">
-                                    <p class="price">Price: $<?= $fetch_products['price']; ?></p>
+                                    <p class="price">Price: Rs.<?= $fetch_products['price']; ?></p>
                                     <a href="checkout.php?get_id=<?= $fetch_products['id']; ?>" class="btn">Buy Now</a>
                                 </div>
                             </form>
