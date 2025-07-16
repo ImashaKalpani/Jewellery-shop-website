@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  background-image: url("img/body-bg.jpg");
+  background-image: url("img/bg.jpg");
   width: 100%;
 }
 
@@ -182,7 +182,7 @@ header {
   z-index: 101;
   transition: 0.3s;
   box-shadow: var(--box-shadow);
-  background-image: url("img/body-bg.jpg");
+  background-image: url("img/bg.jpg");
 }
 
 header.scrolled {
