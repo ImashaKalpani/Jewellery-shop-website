@@ -1,6 +1,6 @@
 <?php
-
 include 'components/connection.php';
+session_start();
 ?>
 <style type="text/css">
     <?php include 'style.css'; ?>
