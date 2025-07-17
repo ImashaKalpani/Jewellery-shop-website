@@ -42,7 +42,7 @@ if (isset($_POST['logout'])) {
         <section class="home-section">
             <div class="slider">
 
-                <!-- Slide 1 -->
+                
                 <div class="slider__slider slide1">
                     <video autoplay muted loop playsinline class="background-video">
                         <source src="img/video1.mp4" type="video/mp4">
@@ -59,7 +59,7 @@ if (isset($_POST['logout'])) {
                     <div class="hero-dec-bottom"></div>
                 </div>
 
-                <!-- Slide 2 -->
+                
                 <div class="slider__slider slide2">
                     <video autoplay muted loop playsinline class="background-video">
                         <source src="img/video4.mp4" type="video/mp4">
@@ -76,7 +76,7 @@ if (isset($_POST['logout'])) {
                     <div class="hero-dec-bottom"></div>
                 </div>
 
-                <!-- Slide 3 -->
+                
                 <div class="slider__slider slide3">
                     <video autoplay muted loop playsinline class="background-video">
                         <source src="img/video1.mp4" type="video/mp4">
@@ -93,7 +93,7 @@ if (isset($_POST['logout'])) {
                     <div class="hero-dec-bottom"></div>
                 </div>
 
-                <!-- Slide 4 -->
+                
                 <div class="slider__slider slide4">
                     <video autoplay muted loop playsinline class="background-video">
                         <source src="img/video4.mp4" type="video/mp4">
@@ -111,7 +111,7 @@ if (isset($_POST['logout'])) {
                     <div class="hero-dec-bottom"></div>
                 </div>
 
-                <!-- Slide 5 -->
+               
                 <div class="slider__slider slide5">
                     <video autoplay muted loop playsinline class="background-video">
                         <source src="img/video1.mp4" type="video/mp4">
@@ -129,13 +129,13 @@ if (isset($_POST['logout'])) {
                     <div class="hero-dec-bottom"></div>
                 </div>
 
-                <!-- Arrows -->
+                
                 <div class="left-arrow"><i class="bx bxs-left-arrow"></i></div>
                 <div class="right-arrow"><i class="bx bxs-right-arrow"></i></div>
             </div>
         </section>
 
-        <!-------home slider end----->
+        
 
         <section class="thumb">
             <div class="box-container">
@@ -298,12 +298,9 @@ if (isset($_POST['logout'])) {
         <?php include 'components/footer.php'; ?>
     </div>
 
-    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <script src="script.js"></script>
 
-
-    <!-- Alert system -->
     <?php include 'components/alert.php'; ?>
 
 </body>
