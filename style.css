@@ -512,25 +512,6 @@ textarea {
   left: 2.5rem;
 }
 
-.hero-dec-top,
-.hero-dec-bottom {
-  position: absolute;
-  left: 5%;
-  width: 100px;
-  height: 100px;
-}
-
-.hero-dec-top {
-  top: 4%;
-  border-left: 2px solid #e2e2e255;
-  border-top: 2px solid #e2e2e255;
-}
-
-.hero-dec-bottom {
-  bottom: 5%;
-  border-left: 2px solid #e2e2e255;
-  border-bottom: 2px solid #e2e2e255;
-}
 
 .thumb {
   max-width: 1200px;

@@ -46,8 +46,7 @@ if (isset($_POST['logout'])) {
                 <div class="slider__slider slide1">
                     <video autoplay muted loop playsinline class="background-video">
                         <source src="img/video1.mp4" type="video/mp4">
-                    </video>
-                    <div class="overlay"></div>
+                    </video>                 
                     <div class="slide-detail">
                         <div class="container">
                             <h1>Welcome To My Shop</h1>
@@ -55,8 +54,6 @@ if (isset($_POST['logout'])) {
                             <a href="view_products.php" class="btn">Shop Now</a>
                         </div>
                     </div>
-                    <div class="hero-dec-top"></div>
-                    <div class="hero-dec-bottom"></div>
                 </div>
 
                 
@@ -64,7 +61,6 @@ if (isset($_POST['logout'])) {
                     <video autoplay muted loop playsinline class="background-video">
                         <source src="img/video4.mp4" type="video/mp4">
                     </video>
-                    <div class="overlay"></div>
                     <div class="slide-detail">
                         <div class="container">
                             <h1>Crafted with Love</h1>
@@ -72,8 +68,6 @@ if (isset($_POST['logout'])) {
                             <a href="view_products.php" class="btn">Shop Now</a>
                         </div>
                     </div>
-                    <div class="hero-dec-top"></div>
-                    <div class="hero-dec-bottom"></div>
                 </div>
 
                 
@@ -81,7 +75,6 @@ if (isset($_POST['logout'])) {
                     <video autoplay muted loop playsinline class="background-video">
                         <source src="img/video1.mp4" type="video/mp4">
                     </video>
-                    <div class="overlay"></div>
                     <div class="slide-detail">
                         <div class="container">
                             <h1>Inspired by Nature</h1>
@@ -89,17 +82,13 @@ if (isset($_POST['logout'])) {
                             <a href="view_products.php" class="btn">Shop Now</a>
                         </div>
                     </div>
-                    <div class="hero-dec-top"></div>
-                    <div class="hero-dec-bottom"></div>
                 </div>
 
                 
                 <div class="slider__slider slide4">
                     <video autoplay muted loop playsinline class="background-video">
                         <source src="img/video4.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
                     </video>
-                    <div class="overlay"></div>
                     <div class="slide-detail">
                         <div class="container">
                             <h1>Authentic & Unique</h1>
@@ -107,17 +96,13 @@ if (isset($_POST['logout'])) {
                             <a href="view_products.php" class="btn">Shop Now</a>
                         </div>
                     </div>
-                    <div class="hero-dec-top"></div>
-                    <div class="hero-dec-bottom"></div>
                 </div>
 
                
                 <div class="slider__slider slide5">
                     <video autoplay muted loop playsinline class="background-video">
                         <source src="img/video1.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
                     </video>
-                    <div class="overlay"></div>
                     <div class="slide-detail">
                         <div class="container">
                             <h1>Handmade in Sri Lanka</h1>
@@ -125,8 +110,6 @@ if (isset($_POST['logout'])) {
                             <a href="view_products.php" class="btn">Shop Now</a>
                         </div>
                     </div>
-                    <div class="hero-dec-top"></div>
-                    <div class="hero-dec-bottom"></div>
                 </div>
 
                 
