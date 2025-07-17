@@ -26,7 +26,7 @@ include 'components/connection.php';
         </div>
         <div class="about-category">
             <div class="box">
-                <img src="img/home7.jpg">
+                <img src="img/product_cont.jpg" style="opacity: 0.8; height: 270px; overflow: hidden;">
                 <div class="detail">
                     <span>HANDMADE RINGS</span>
                     <h1>Timeless Beauty</h1>
@@ -34,7 +34,7 @@ include 'components/connection.php';
                 </div>
             </div>
             <div class="box">
-                <img src="img/home6.jpg">
+                <img src="img/home3.jpg" style="opacity: 0.8; height: 270px; overflow: hidden;">
                 <div class="detail">
                     <span>BEADED NECKLACES</span>
                     <h1>Nature’s Charm</h1>
@@ -43,7 +43,7 @@ include 'components/connection.php';
             </div>
 
             <div class="box" style="height: 300px; overflow: hidden;">
-                <img src="img/home2.jpg" style="height: 100%; object-fit: cover;">
+                <img src="img/home2.jpg" style="height: 100%; object-fit: cover;  width:345px; opacity: 0.8;">
                 <div class="detail">
                     <span>PEARL RINGS</span>
                     <h1>Elegant Touch</h1>
@@ -52,7 +52,7 @@ include 'components/connection.php';
             </div>
 
             <div class="box" style="height: 300px; overflow: hidden;">
-                <img src="img/home4.jpg" style="height: 100%; object-fit: cover;">
+                <img src="img/home4.jpg" style="height: 100%; object-fit: cover; opacity:0.8;">
                 <div class="detail">
                     <span>NECKLACES SETS</span>
                     <h1>Grace in Gold</h1>
