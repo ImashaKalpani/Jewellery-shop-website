@@ -835,6 +835,12 @@ footer .inner-footer .card li {
   line-height: 1.5rem;
   text-transform: capitalize;
   font-size: 16px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+footer .inner-footer .card li:hover {
+  transform: translateX(5px); 
+  color: #000;
 }
 
 footer .inner-footer .card li:nth-child(1),
@@ -875,7 +881,7 @@ footer .inner-footer .card .social-links i {
   font-size: 1.3rem;
 }
 
-footer.inner-footer .card .social-links i:hover {
+footer .inner-footer .card .social-links i:hover {
   background: var(--green);
   color: #fff;
 }
