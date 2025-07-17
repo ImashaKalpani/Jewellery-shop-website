@@ -1,6 +1,6 @@
 <?php
-
 include 'components/connection.php';
+session_start();
 ?>
 <style type="text/css">
     <?php include 'style.css'; ?>
@@ -150,12 +150,8 @@ include 'components/connection.php';
         </div>
         <?php include 'components/footer.php'; ?>
     </div>
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+   
     <script src="script.js"></script>
-
-
-    <!-- Alert system -->
     <?php include 'components/alert.php'; ?>
 
 </body>
