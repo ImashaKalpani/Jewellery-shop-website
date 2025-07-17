@@ -139,6 +139,7 @@ if (isset($_POST['add_to_cart'])) {
         <?php include 'components/footer.php'; ?>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <script src="script.js"></script>
     <?php include 'components/alert.php'; ?>
 

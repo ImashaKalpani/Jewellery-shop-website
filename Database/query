@@ -1,0 +1,242 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jul 17, 2025 at 03:19 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `shop_db`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cart`
+--
+
+CREATE TABLE `cart` (
+  `id` varchar(50) NOT NULL,
+  `user_id` varchar(50) NOT NULL,
+  `product_id` varchar(50) NOT NULL,
+  `price` varchar(20) NOT NULL,
+  `qty` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `cart`
+--
+
+INSERT INTO `cart` (`id`, `user_id`, `product_id`, `price`, `qty`) VALUES
+('c0OYvFO1Ak50khlbLFZe', 'i8D2pGYTLmmkrslPAZGZ', '2', '1150', 1),
+('upnjp573oYcXPMcKH55Q', 'wTYo2dS8lp0VADH9Sonl', '4', '1499', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `messages`
+--
+
+CREATE TABLE `messages` (
+  `id` int(11) NOT NULL,
+  `user_id` varchar(255) DEFAULT NULL,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `number` varchar(20) NOT NULL,
+  `message` text NOT NULL,
+  `date` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `messages`
+--
+
+INSERT INTO `messages` (`id`, `user_id`, `name`, `email`, `number`, `message`, `date`) VALUES
+(1, '', 'nadini', 'biyakalu@gmail.com', '0123456789', 'hello it was awesome', '2025-07-15 08:21:00'),
+(2, 'wTYo2dS8lp0VADH9Sonl', 'Navi', 'navimadusha@gmail.com', '0147258369', 'nicee', '2025-07-17 09:14:36'),
+(3, 'wTYo2dS8lp0VADH9Sonl', 'Navi', 'navimadusha@gmail.com', '0147258369', 'nicee', '2025-07-17 09:26:42');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `orders`
+--
+
+CREATE TABLE `orders` (
+  `id` int(50) NOT NULL,
+  `user_id` varchar(50) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `number` int(11) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `address` varchar(100) NOT NULL,
+  `address_type` varchar(100) NOT NULL,
+  `method` varchar(50) NOT NULL,
+  `product_id` int(11) NOT NULL,
+  `price` int(11) NOT NULL,
+  `qty` int(11) NOT NULL,
+  `date` date DEFAULT curdate(),
+  `status` varchar(50) NOT NULL DEFAULT 'Pending'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `orders`
+--
+
+INSERT INTO `orders` (`id`, `user_id`, `name`, `number`, `email`, `address`, `address_type`, `method`, `product_id`, `price`, `qty`, `date`, `status`) VALUES
+(1, '', 'biyanga', 2147483647, 'biyakalu@gmail.com', '21,, main street, kaduwela, sri lanka, 11223', 'home', 'net banking', 4, 1499, 1, '0000-00-00', ''),
+(4, '', 'biyanga', 2147483647, 'biyakalu@gmail.com', '21,, main street, kaduwela, sri lanka, 11223', 'home', 'net banking', 6, 1349, 1, '0000-00-00', ''),
+(8, '', 'biyanga', 2147483647, 'biyakalu@gmail.com', '21,, main street, kaduwela, sri lanka, 11223', 'home', 'net banking', 15, 2649, 1, '0000-00-00', ''),
+(9, '', 'biyanga', 2147483647, 'biyakalu@gmail.com', '21,, main street, kaduwela, sri lanka, 11223', 'home', 'net banking', 6, 1349, 1, '0000-00-00', ''),
+(10, '', 'biyanga', 2147483647, 'biyakalu@gmail.com', '21,, main street, kaduwela, sri lanka, 11223', 'home', 'net banking', 4, 1499, 1, '0000-00-00', ''),
+(11, '', 'biyanga', 2147483647, 'biyakalu@gmail.com', '21,, main street, kaduwela, sri lanka, 11223', 'home', 'net banking', 15, 2649, 1, '0000-00-00', ''),
+(12, '', 'biyanga', 2147483647, 'biyakalu@gmail.com', '21,, main street, kaduwela, sri lanka, 11223', 'home', 'net banking', 7, 2099, 2, '0000-00-00', ''),
+(13, 'wTYo2dS8lp0VADH9Sonl', 'biyanga', 6, 'biyakalu@gmail.com', '125, street, kottawa, sri lanka, 45896', 'office', 'credit or debit card', 3, 1599, 2, '0000-00-00', ''),
+(14, 'wTYo2dS8lp0VADH9Sonl', 'biyanga', 6, 'biyakalu@gmail.com', '125, street, kottawa, sri lanka, 45896', 'office', 'credit or debit card', 7, 2099, 1, '0000-00-00', ''),
+(15, 'wTYo2dS8lp0VADH9Sonl', 'biyanga', 4521, 'biyakalu@gmail.com', '125, street, fevekmk, country, 11223', 'home', 'cash on delivery', 9, 2199, 1, '2025-07-12', ''),
+(16, 'wTYo2dS8lp0VADH9Sonl', 'biyanga', 4589, 'biyakalu@gmail.com', '123, street, city, country, 45896', 'home', 'credit or debit card', 7, 2099, 1, '2025-07-12', ''),
+(17, 'wTYo2dS8lp0VADH9Sonl', 'biyanga', 415, 'biyakalu@gmail.com', '123, street, Kaduwela, sri lanka, 45896', 'home', 'cash on delivery', 19, 1949, 1, '2025-07-12', 'pending'),
+(18, 'wTYo2dS8lp0VADH9Sonl', 'biyanga', 4125, 'biyakalu@gmail.com', '125, Main road, Kaduwela, sri lanka, 45896', 'home', 'cash on delivery', 5, 1699, 3, '2025-07-12', 'pending'),
+(19, 'i8D2pGYTLmmkrslPAZGZ', 'biyanga', 123456789, 'biyakalu@gmail.com', '123, street, kottawa, sri lanka, 45896', 'home', 'cash on delivery', 15, 2649, 3, '2025-07-12', 'pending');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `products`
+--
+
+CREATE TABLE `products` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `price` int(11) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `product_detail` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`id`, `name`, `price`, `image`, `product_detail`) VALUES
+(1, 'Elegant Bangles', 1099, 'shop_bangles1.jpg', 'Beautiful traditional golden bangles perfect for weddings and cultural events.'),
+(2, 'Elegant Bangles', 1150, 'shop_bangles3.jpg', 'Handcrafted golden bangles showcasing timeless craftsmanship.'),
+(3, 'Stylish Bracelet', 1599, 'shop_bracelet1.png', 'Trendy modern bracelet with a sleek, stylish finish.'),
+(4, 'Stylish Bracelet', 1499, 'shop_bracelet2.png', 'Silver-tone bracelet ideal for casual and formal wear.'),
+(5, 'Stylish Bracelet', 1699, 'shop_bracelet3.png', 'Chic beaded bracelet with adorable charm accents.'),
+(6, 'Stylish Bracelet', 1349, 'shop_bracelet4.png', 'Classic leather bracelet with a rugged, fashionable touch.'),
+(7, 'Classic Chain', 2099, 'shop_chain1.jpg', 'Elegant gold chain with a subtle and rich look.'),
+(8, 'Classic Chain', 2250, 'shop_chain2.jpg', 'Polished silver chain that enhances any outfit.'),
+(9, 'Classic Chain', 2199, 'shop_chain3.jpg', 'Lightweight and durable chain perfect for daily wear.'),
+(10, 'Cute Earrings', 999, 'shop_earrings1.png', 'Sparkling stone-studded studs for a charming appeal.'),
+(11, 'Cute Earrings', 1049, 'shop_earrings2.png', 'Dangling earrings with graceful movement and style.'),
+(12, 'Gold Necklace', 2599, 'shop_necklace1.png', 'Elegant gold necklace that complements ethnic wear.'),
+(13, 'Gold Necklace', 2750, 'shop_necklace2.png', 'Premium-quality necklace crafted for grand occasions.'),
+(14, 'Gold Necklace', 2899, 'shop_necklace3.png', 'Minimalist chain necklace with a clean gold finish.'),
+(15, 'Gold Necklace', 2649, 'shop_necklace4.jpg', 'Elegant chain with a delicate gold pendant.'),
+(16, 'Gold Necklace', 3000, 'shop_necklace5.jpg', 'Traditional bridal necklace perfect for weddings.'),
+(17, 'Gold Necklace', 3299, 'shop_necklace6.jpg', 'Modern gold necklace designed to make a bold statement.'),
+(18, 'Diamond Ring', 1899, 'shop_ring1.png', 'Elegant diamond ring featuring a single sparkling stone.'),
+(19, 'Diamond Ring', 1949, 'shop_ring2.png', 'Stylish silver ring with a luxurious diamond finish.'),
+(20, 'Diamond Ring', 2000, 'shop_ring3.jpg', 'Exquisite engagement-style ring with timeless beauty.');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` varchar(50) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `password` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `email`, `password`) VALUES
+('wTYo2dS8lp0VADH9Sonl', 'biyanga', 'biyakalu@gmail.com', 'biya'),
+('i8D2pGYTLmmkrslPAZGZ', 'Navi', 'navimadusha@gmail.com', 'navee');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `wishlist`
+--
+
+CREATE TABLE `wishlist` (
+  `id` varchar(50) NOT NULL,
+  `user_id` varchar(50) NOT NULL,
+  `product_id` varchar(50) NOT NULL,
+  `price` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `wishlist`
+--
+
+INSERT INTO `wishlist` (`id`, `user_id`, `product_id`, `price`) VALUES
+('zbhHtaqff4JJjChiNCEQ', '', '7', '2099'),
+('QK5IHloIES5w8mokiCtU', 'wTYo2dS8lp0VADH9Sonl', '11', '1049');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `messages`
+--
+ALTER TABLE `messages`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `orders`
+--
+ALTER TABLE `orders`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `products`
+--
+ALTER TABLE `products`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `messages`
+--
+ALTER TABLE `messages`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `orders`
+--
+ALTER TABLE `orders`
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+
+--
+-- AUTO_INCREMENT for table `products`
+--
+ALTER TABLE `products`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
