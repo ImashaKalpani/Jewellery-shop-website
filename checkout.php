@@ -127,7 +127,7 @@ if (isset($_POST['place_order'])) {
                             </div>
                             <div class="input-field">
                                 <p>Your Number<span>*</span></p>
-                                <input type="number" name="number" required maxlength="10" placeholder="Enter your number" class="input">
+                                <input type="tel" name="number" required maxlength="10" placeholder="Enter your number" class="input">
                             </div>
                             <div class="input-field">
                                 <p>Your Email<span>*</span></p>
