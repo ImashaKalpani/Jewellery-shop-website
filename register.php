@@ -33,7 +33,7 @@ if (isset($_POST['submit'])) {
     } else {
         if ($pass != $cpass) {
             $message[] = 'confirm your password';
-            echo 'confirm your password';
+            //echo 'confirm your password';
         } else {
             $insert_user = $conn->prepare("INSERT INTO `users` (id, name, email, password) VALUES(?,?,?,?)");
             $insert_user->execute([$id, $name, $email, $pass]);
