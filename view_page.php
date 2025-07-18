@@ -10,7 +10,7 @@ if (isset($_SESSION['user_id'])) {
 
 if (isset($_POST['logout'])) {
     session_destroy();
-    header('location: login.php');
+    header('location: home.php');
 }
 
 // adding products in wishlist
