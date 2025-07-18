@@ -445,7 +445,7 @@ textarea {
   width: 380px;
   height: 1px;
   bottom: -40%;
-  left: 20%;
+  left: 25%;
 }
 
 .slider__slider .slide-detail h1::after {
@@ -803,7 +803,7 @@ footer .inner-footer {
   margin: 0 auto;
   padding: 2rem 1rem;
   color: #fff;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 footer .inner-footer .card {
